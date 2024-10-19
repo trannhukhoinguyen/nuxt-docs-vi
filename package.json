@@ -2,6 +2,9 @@
   "name": "catppuccin-starlight",
   "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "concurrently \"pnpm --filter docs dev\" \"pnpm --filter starlight-theme-catppuccin dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
   }
 }
