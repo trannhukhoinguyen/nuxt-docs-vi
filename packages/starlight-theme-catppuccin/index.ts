@@ -18,11 +18,12 @@ type Accents =
 	| "lavender";
 
 interface Config {
-	dark: `${DarkFlavors}-${Accents}`;
-	light: `latte-${Accents}`;
+	dark?: `${DarkFlavors}-${Accents}`;
+	light?: `latte-${Accents}`;
 }
 
-export default function createPlugin({ dark, light }: Config = { dark: 'mocha-mauve', light: 'latte-mauve' }): StarlightPlugin {
+export default function createPlugin(config?: Config): StarlightPlugin {
+	const { dark, light } = config ?? {}
 	return {
 		name: "starlight-theme-catppuccin",
 		hooks: {
@@ -30,9 +31,9 @@ export default function createPlugin({ dark, light }: Config = { dark: 'mocha-ma
 				updateConfig({
 					customCss: [
 						...config.customCss ?? [],
-						`starlight-theme-catppuccin/themes/catppuccin-${dark}.css`,
-						`starlight-theme-catppuccin/themes/catppuccin-${light}.css`,
-						`starlight-theme-catppuccin/styles/shared.css`,
+						`starlight-theme-catppuccin/themes/catppuccin-${dark ?? 'mocha-mauve'}.css`,
+						`starlight-theme-catppuccin/themes/catppuccin-${light ?? 'latte-mauve'}.css`,
+						"starlight-theme-catppuccin/styles/shared.css",
 					],
 				});
 			},
