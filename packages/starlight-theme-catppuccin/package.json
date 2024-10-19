@@ -4,6 +4,7 @@
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
+		"./styles/*": "./styles/*",
 		"./themes/*": "./themes/*"
 	},
 	"files": [

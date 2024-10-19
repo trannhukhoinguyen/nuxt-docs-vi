@@ -76,3 +76,7 @@ export default defineConfig({
   ]
 })
 ```
+
+## 💝 Thanks to
+- [TheOtterlord](https://github.com/TheOtterlord)
+- [Louis Escher](https://github.com/louisescher)

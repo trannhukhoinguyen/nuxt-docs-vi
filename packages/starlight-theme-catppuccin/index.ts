@@ -32,6 +32,7 @@ export default function createPlugin({ dark, light }: Config = { dark: 'mocha-ma
 						...config.customCss ?? [],
 						`starlight-theme-catppuccin/themes/catppuccin-${dark}.css`,
 						`starlight-theme-catppuccin/themes/catppuccin-${light}.css`,
+						`starlight-theme-catppuccin/styles/shared.css`,
 					],
 				});
 			},
