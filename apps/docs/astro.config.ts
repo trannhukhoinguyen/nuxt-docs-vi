@@ -29,7 +29,7 @@ export default defineConfig({
 				},
 			],
 			plugins: [
-				catppuccin()
+				catppuccin({ dark: 'mocha-mauve', light: 'latte-mauve' })
 			]
 		}),
 	],

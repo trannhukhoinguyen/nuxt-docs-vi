@@ -41,4 +41,6 @@ whiskers:
 	--sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
 	--sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
 	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
+
+  color-scheme: dark;
 }
