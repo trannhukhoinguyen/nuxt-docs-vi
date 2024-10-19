@@ -10,6 +10,9 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			expressiveCode: {
+				themes: ['catppuccin-mocha', 'catppuccin-latte'],
+			},
 			customCss: [
 				'@fontsource/inter/400.css',
 				'@fontsource/inter/600.css',
@@ -33,4 +36,7 @@ export default defineConfig({
 			]
 		}),
 	],
+	devToolbar: {
+		enabled: false,
+	},
 });

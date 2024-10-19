@@ -11,6 +11,7 @@
 	<a href="https://github.com/TheOtterlord/catppuccin-starlight/contributors"><img src="https://img.shields.io/github/contributors/TheOtterlord/catppuccin-starlight?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-## Usage
+![Catppuccin Starlight Preview](./assets/catppuccin-starlight.png)
 
+## Usage
 

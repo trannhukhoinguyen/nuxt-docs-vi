@@ -21,3 +21,22 @@ site-search kbd {
 [data-theme="light"] #starlight__sidebar ul li {
   border-color: var(--sl-color-hairline-light);
 }
+
+.expressive-code {
+  border: 1px solid var(--sl-color-gray-5);
+}
+
+.frame.has-title.not-content, .expressive-code .frame {
+  box-shadow: none !important;
+}
+
+.expressive-code span.title {
+  margin: 0 !important;
+  background-clip: border-box !important;
+  background: var(--sl-color-gray-6) !important;
+}
+
+.expressive-code pre {
+  --code-background: var(--sl-color-gray-6);
+  background: var(--sl-color-gray-6);
+}
