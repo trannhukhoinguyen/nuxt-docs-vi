@@ -7,7 +7,7 @@ whiskers:
   filename: "themes/catppuccin-{{flavor.identifier}}-{{accent}}.css"
 ---
 /* Dark mode colors. */
-:root {
+:root{{if(cond=flavor.light, t="[data-theme='light']", f="")}} {
 	--sl-color-accent-low: {{flavor.colors[accent] | sub(lightness=60) | css_hsl}};
 	--sl-color-accent: {{flavor.colors[accent] | sub(lightness=20) | css_hsl}};
 	--sl-color-accent-high: {{flavor.colors[accent] | css_hsl}};
@@ -42,5 +42,5 @@ whiskers:
 	--sl-color-red: hsl(var(--sl-hue-red), 74%, 73%);
 	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
 
-  color-scheme: dark;
+  color-scheme: {{if(cond=flavor.light, t="light", f="dark")}};
 }
