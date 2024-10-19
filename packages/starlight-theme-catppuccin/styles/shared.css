@@ -36,3 +36,11 @@ site-search kbd {
   --code-background: var(--sl-color-gray-6);
   background: var(--sl-color-gray-6);
 }
+
+.expressive-code .frame.is-terminal .header {
+  border: none !important;
+}
+
+.expressive-code .frame.is-terminal span.title {
+  background-color: transparent !important;
+}
