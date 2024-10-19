@@ -2,9 +2,7 @@
   "name": "catppuccin-starlight",
   "version": "0.0.1",
   "scripts": {
-    "dev": "concurrently \"pnpm --filter docs dev\" \"pnpm --filter starlight-theme-catppuccin dev\""
-  },
-  "devDependencies": {
-    "concurrently": "^9.0.1"
+    "dev": "pnpm --filter starlight-theme-catppuccin --filter docs dev",
+    "build": "pnpm --filter starlight-theme-catppuccin --filter docs build"
   }
 }
