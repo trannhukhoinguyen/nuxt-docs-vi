@@ -1,12 +1,17 @@
 {
 	"name": "starlight-theme-catppuccin",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
 		"./styles/*": "./styles/*",
 		"./themes/*": "./themes/*"
 	},
+	"homepage": "https://catppuccin-starlight.otterlord.dev/",
+	"author": "Reuben Tier <otterlord.dev@gmail.com>",
+	"contributors": [
+		"Louis Escher <louisescher@proton.me>"
+	],
 	"files": [
 		"index.ts",
 		"styles",
