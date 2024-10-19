@@ -70,7 +70,7 @@ export default defineConfig({
     starlight({
       // ...
       plugins: [
-        catppuccin({ dark: "frappe-sky", light: "latte-sky" })
+        catppuccin({ dark: "macchiato-sky", light: "latte-sky" })
       ]
     })
   ]
