@@ -1,0 +1,36 @@
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: hsl(199, 65%, 9%);
+	--sl-color-accent: hsl(199, 65%, 49%);
+	--sl-color-accent-high: hsl(199, 65%, 69%);
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eceef2;
+	--sl-color-gray-2: #cad3f5;
+	--sl-color-gray-3: #a5adcb;
+	--sl-color-gray-4: #494d64;
+	--sl-color-gray-5: #363a4f;
+	--sl-color-gray-6: #1e2030;
+	--sl-color-gray-7: #181926;
+	--sl-color-black: #24273a;
+
+  --sl-hue-orange: 41;
+	--sl-color-orange-low: hsl(var(--sl-hue-orange), 39%, 22%);
+	--sl-color-orange: hsl(var(--sl-hue-orange), 82%, 63%);
+	--sl-color-orange-high: hsl(var(--sl-hue-orange), 82%, 87%);
+	--sl-hue-green: 101;
+	--sl-color-green-low: hsl(var(--sl-hue-green), 39%, 22%);
+	--sl-color-green: hsl(var(--sl-hue-green), 82%, 63%);
+	--sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
+	--sl-hue-blue: 234;
+	--sl-color-blue-low: hsl(var(--sl-hue-blue), 54%, 20%);
+	--sl-color-blue: hsl(var(--sl-hue-blue), 100%, 60%);
+	--sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 87%);
+	--sl-hue-purple: 281;
+	--sl-color-purple-low: hsl(var(--sl-hue-purple), 39%, 22%);
+	--sl-color-purple: hsl(var(--sl-hue-purple), 82%, 63%);
+	--sl-color-purple-high: hsl(var(--sl-hue-purple), 82%, 89%);
+	--sl-hue-red: 339;
+	--sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
+	--sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
+	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
+}

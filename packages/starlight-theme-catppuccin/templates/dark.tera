@@ -1,0 +1,44 @@
+---
+whiskers:
+  version: "2.4.0"
+  matrix:
+    - flavor
+    - accent
+  filename: "themes/catppuccin-{{flavor.identifier}}-{{accent}}.css"
+---
+/* Dark mode colors. */
+:root {
+	--sl-color-accent-low: {{flavor.colors[accent] | sub(lightness=60) | css_hsl}};
+	--sl-color-accent: {{flavor.colors[accent] | sub(lightness=20) | css_hsl}};
+	--sl-color-accent-high: {{flavor.colors[accent] | css_hsl}};
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eceef2;
+	--sl-color-gray-2: #{{text.hex}};
+	--sl-color-gray-3: #{{subtext0.hex}};
+	--sl-color-gray-4: #{{surface1.hex}};
+	--sl-color-gray-5: #{{surface0.hex}};
+	--sl-color-gray-6: #{{mantle.hex}};
+	--sl-color-gray-7: #{{crust.hex}};
+	--sl-color-black: #{{base.hex}};
+
+  --sl-hue-orange: 41;
+	--sl-color-orange-low: hsl(var(--sl-hue-orange), 39%, 22%);
+	--sl-color-orange: hsl(var(--sl-hue-orange), 82%, 63%);
+	--sl-color-orange-high: hsl(var(--sl-hue-orange), 82%, 87%);
+	--sl-hue-green: 101;
+	--sl-color-green-low: hsl(var(--sl-hue-green), 39%, 22%);
+	--sl-color-green: hsl(var(--sl-hue-green), 82%, 63%);
+	--sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
+	--sl-hue-blue: 234;
+	--sl-color-blue-low: hsl(var(--sl-hue-blue), 54%, 20%);
+	--sl-color-blue: hsl(var(--sl-hue-blue), 100%, 60%);
+	--sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 87%);
+	--sl-hue-purple: 281;
+	--sl-color-purple-low: hsl(var(--sl-hue-purple), 39%, 22%);
+	--sl-color-purple: hsl(var(--sl-hue-purple), 82%, 63%);
+	--sl-color-purple-high: hsl(var(--sl-hue-purple), 82%, 89%);
+	--sl-hue-red: 339;
+	--sl-color-red-low: hsl(var(--sl-hue-red), 39%, 22%);
+	--sl-color-red: hsl(var(--sl-hue-red), 82%, 63%);
+	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
+}

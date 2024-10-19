@@ -1,0 +1,26 @@
+{
+	"name": "starlight-theme-catppuccin",
+	"version": "0.0.1",
+	"type": "module",
+	"exports": {
+		".": "./index.ts",
+		"./themes/*": "./themes/*"
+	},
+	"files": ["index.ts", "themes"],
+	"keywords": ["withastro"],
+	"scripts": {
+    "build": "whiskers --flavor mocha templates/dark.tera && whiskers --flavor macchiato templates/dark.tera && whiskers --flavor frappe templates/dark.tera && whiskers --flavor latte templates/light.tera"
+  },
+	"devDependencies": {
+		"astro": "^4.15.3"
+	},
+	"peerDependencies": {
+		"@astrojs/starlight": "^0.28.0",
+		"astro": "^4.0.0"
+	},
+	"dependencies": {
+		"@astrojs/check": "^0.9.3",
+		"@astrojs/starlight": "catalog:",
+		"typescript": "^5.5.4"
+	}
+}
