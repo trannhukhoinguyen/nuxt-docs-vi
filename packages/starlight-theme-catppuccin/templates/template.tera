@@ -21,25 +21,25 @@ whiskers:
 	--sl-color-gray-7: #{{crust.hex}};
 	--sl-color-black: #{{base.hex}};
 
-  --sl-hue-orange: 21;
+  --sl-hue-orange: {{peach.hsl.h}};
 	--sl-color-orange-low: hsl(var(--sl-hue-orange), 33%, 25%);
-	--sl-color-orange: hsl(var(--sl-hue-orange), 86%, 73%);
+	--sl-color-orange: hsl(var(--sl-hue-orange), {{peach.hsl.s}}, {{peach.hsl.l}});
 	--sl-color-orange-high: hsl(var(--sl-hue-orange), 82%, 87%);
-	--sl-hue-green: 105;
+	--sl-hue-green: {{green.hsl.h}};
 	--sl-color-green-low: hsl(var(--sl-hue-green), 33%, 25%);
-	--sl-color-green: hsl(var(--sl-hue-green), 48%, 72%);
+	--sl-color-green: hsl(var(--sl-hue-green), {{green.hsl.s}}, {{green.hsl.l}});
 	--sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
-	--sl-hue-blue: 220;
+	--sl-hue-blue: {{blue.hsl.h}};
 	--sl-color-blue-low: hsl(var(--sl-hue-blue), 33%, 25%);
-	--sl-color-blue: hsl(var(--sl-hue-blue), 83%, 75%);
+	--sl-color-blue: hsl(var(--sl-hue-blue), {{blue.hsl.s}}, {{blue.hsl.l}});
 	--sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 87%);
-	--sl-hue-purple: 267;
+	--sl-hue-purple: {{mauve.hsl.h}};
 	--sl-color-purple-low: hsl(var(--sl-hue-purple), 33%, 25%);
-	--sl-color-purple: hsl(var(--sl-hue-purple), 83%, 80%);
+	--sl-color-purple: hsl(var(--sl-hue-purple), {{mauve.hsl.s}}, {{mauve.hsl.l}});
 	--sl-color-purple-high: hsl(var(--sl-hue-purple), 82%, 89%);
-	--sl-hue-red: 351;
+	--sl-hue-red: {{red.hsl.h}};
 	--sl-color-red-low: hsl(var(--sl-hue-red), 33%, 25%);
-	--sl-color-red: hsl(var(--sl-hue-red), 74%, 73%);
+	--sl-color-red: hsl(var(--sl-hue-red), {{red.hsl.s}}, {{red.hsl.l}});
 	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
 
   color-scheme: {{if(cond=flavor.light, t="light", f="dark")}};

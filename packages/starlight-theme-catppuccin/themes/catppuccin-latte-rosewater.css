@@ -1,4 +1,4 @@
-/* Light mode colors. */
+/* Dark mode colors. */
 :root[data-theme='light'] {
 	--sl-color-accent-low: hsl(11, 59%, 7%);
 	--sl-color-accent: hsl(11, 59%, 47%);
@@ -13,25 +13,26 @@
 	--sl-color-gray-7: #dce0e8;
 	--sl-color-black: #eff1f5;
 
-	--sl-color-bg-nav: #dce0e8;
-	--sl-color-bg-sidebar: #dce0e8;
-	--sl-color-hairline-light: #bcc0cc;
-
-  --sl-color-orange-high: hsl(var(--sl-hue-orange), 80%, 25%);
-	--sl-color-orange: hsl(var(--sl-hue-orange), 90%, 60%);
-	--sl-color-orange-low: hsl(var(--sl-hue-orange), 90%, 88%);
-	--sl-color-green-high: hsl(var(--sl-hue-green), 80%, 22%);
-	--sl-color-green: hsl(var(--sl-hue-green), 90%, 46%);
-	--sl-color-green-low: hsl(var(--sl-hue-green), 85%, 90%);
-	--sl-color-blue-high: hsl(var(--sl-hue-blue), 80%, 30%);
-	--sl-color-blue: hsl(var(--sl-hue-blue), 90%, 60%);
-	--sl-color-blue-low: hsl(var(--sl-hue-blue), 88%, 90%);
-	--sl-color-purple-high: hsl(var(--sl-hue-purple), 90%, 30%);
-	--sl-color-purple: hsl(var(--sl-hue-purple), 90%, 60%);
-	--sl-color-purple-low: hsl(var(--sl-hue-purple), 80%, 90%);
-	--sl-color-red-high: hsl(var(--sl-hue-red), 80%, 30%);
-	--sl-color-red: hsl(var(--sl-hue-red), 90%, 60%);
-	--sl-color-red-low: hsl(var(--sl-hue-red), 80%, 90%);
+  --sl-hue-orange: 22;
+	--sl-color-orange-low: hsl(var(--sl-hue-orange), 33%, 25%);
+	--sl-color-orange: hsl(var(--sl-hue-orange), 0.9918367266654968, 0.5196078419685364);
+	--sl-color-orange-high: hsl(var(--sl-hue-orange), 82%, 87%);
+	--sl-hue-green: 109;
+	--sl-color-green-low: hsl(var(--sl-hue-green), 33%, 25%);
+	--sl-color-green: hsl(var(--sl-hue-green), 0.5763546824455261, 0.39803922176361084);
+	--sl-color-green-high: hsl(var(--sl-hue-green), 82%, 80%);
+	--sl-hue-blue: 220;
+	--sl-color-blue-low: hsl(var(--sl-hue-blue), 33%, 25%);
+	--sl-color-blue: hsl(var(--sl-hue-blue), 0.914893627166748, 0.5392156839370728);
+	--sl-color-blue-high: hsl(var(--sl-hue-blue), 100%, 87%);
+	--sl-hue-purple: 266;
+	--sl-color-purple-low: hsl(var(--sl-hue-purple), 33%, 25%);
+	--sl-color-purple: hsl(var(--sl-hue-purple), 0.8504672646522522, 0.5803921818733215);
+	--sl-color-purple-high: hsl(var(--sl-hue-purple), 82%, 89%);
+	--sl-hue-red: 347;
+	--sl-color-red-low: hsl(var(--sl-hue-red), 33%, 25%);
+	--sl-color-red: hsl(var(--sl-hue-red), 0.8666666746139526, 0.44117647409439087);
+	--sl-color-red-high: hsl(var(--sl-hue-red), 82%, 87%);
 
   color-scheme: light;
 }
