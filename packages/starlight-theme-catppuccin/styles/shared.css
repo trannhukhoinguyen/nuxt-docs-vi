@@ -28,8 +28,8 @@ site-search kbd {
 
 .expressive-code span.title {
   margin: 0 !important;
-  background-clip: border-box !important;
   background: var(--sl-color-gray-6) !important;
+  background-clip: border-box !important;
 }
 
 .expressive-code pre {

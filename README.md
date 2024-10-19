@@ -11,25 +11,25 @@
 	<a href="https://github.com/TheOtterlord/catppuccin-starlight/contributors"><img src="https://img.shields.io/github/contributors/TheOtterlord/catppuccin-starlight?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-![Catppuccin Starlight Preview](./assets/catppuccin-starlight.png)
+![Catppuccin Starlight Preview](./assets/catppuccin-starlight.webp)
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="./assets/latte.png"/>
+<img src="./assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="./assets/frappe.png"/>
+<img src="./assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="./assets/macchiato.png"/>
+<img src="./assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="./assets/mocha.png"/>
+<img src="./assets/mocha.webp"/>
 </details>
 
 ## Usage
@@ -80,3 +80,17 @@ export default defineConfig({
 ## 💝 Thanks to
 - [TheOtterlord](https://github.com/TheOtterlord)
 - [Louis Escher](https://github.com/louisescher)
+
+&nbsp;
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+
+<p align="center">
+	Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+</p>
+
+<p align="center">
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+</p>
