@@ -7,6 +7,11 @@
 		"./styles/*": "./styles/*",
 		"./themes/*": "./themes/*"
 	},
+	"homepage": "https://catppuccin-starlight.otterlord.dev/",
+	"author": "Reuben Tier <otterlord.dev@gmail.com>",
+	"contributors": [
+		"Louis Escher <louisescher@proton.me>"
+	],
 	"files": [
 		"index.ts",
 		"styles",
