@@ -14,7 +14,7 @@ whiskers:
 	--sl-color-white: #17181c;
 	--sl-color-gray-1: #24272f;
 	--sl-color-gray-2: #{{text.hex}};
-	--sl-color-gray-3: #{{surface2.hex}};
+	--sl-color-gray-3: #{{subtext0.hex}};
 	--sl-color-gray-4: #{{surface1.hex}};
 	--sl-color-gray-5: #{{surface0.hex}};
 	--sl-color-gray-6: #{{mantle.hex}};
