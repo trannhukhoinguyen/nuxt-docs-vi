@@ -8,9 +8,9 @@ whiskers:
 ---
 /* Light mode colors. */
 :root[data-theme='light'] {
-	--sl-color-accent-low: #c7d6ff;
-	--sl-color-accent: #364bff;
-	--sl-color-accent-high: #182775;
+	--sl-color-accent-low: {{flavor.colors[accent] | sub(lightness=60) | css_hsl}};
+	--sl-color-accent: {{flavor.colors[accent] | sub(lightness=20) | css_hsl}};
+	--sl-color-accent-high: {{flavor.colors[accent] | css_hsl}};
 	--sl-color-white: #17181c;
 	--sl-color-gray-1: #24272f;
 	--sl-color-gray-2: #{{text.hex}};
@@ -20,6 +20,10 @@ whiskers:
 	--sl-color-gray-6: #{{mantle.hex}};
 	--sl-color-gray-7: #{{crust.hex}};
 	--sl-color-black: #{{base.hex}};
+	
+	--sl-color-bg-nav: #{{crust.hex}};
+	--sl-color-bg-sidebar: #{{crust.hex}};
+	--sl-color-hairline-light: #{{surface1.hex}};
 
   --sl-color-orange-high: hsl(var(--sl-hue-orange), 80%, 25%);
 	--sl-color-orange: hsl(var(--sl-hue-orange), 90%, 60%);
@@ -36,4 +40,6 @@ whiskers:
 	--sl-color-red-high: hsl(var(--sl-hue-red), 80%, 30%);
 	--sl-color-red: hsl(var(--sl-hue-red), 90%, 60%);
 	--sl-color-red-low: hsl(var(--sl-hue-red), 80%, 90%);
+
+  color-scheme: light;
 }

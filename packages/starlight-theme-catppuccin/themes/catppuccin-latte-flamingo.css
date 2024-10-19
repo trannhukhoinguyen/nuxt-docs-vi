@@ -1,8 +1,8 @@
 /* Light mode colors. */
 :root[data-theme='light'] {
-	--sl-color-accent-low: #c7d6ff;
-	--sl-color-accent: #364bff;
-	--sl-color-accent-high: #182775;
+	--sl-color-accent-low: hsl(0, 60%, 7%);
+	--sl-color-accent: hsl(0, 60%, 47%);
+	--sl-color-accent-high: hsl(0, 60%, 67%);
 	--sl-color-white: #17181c;
 	--sl-color-gray-1: #24272f;
 	--sl-color-gray-2: #4c4f69;
@@ -12,6 +12,10 @@
 	--sl-color-gray-6: #e6e9ef;
 	--sl-color-gray-7: #dce0e8;
 	--sl-color-black: #eff1f5;
+	
+	--sl-color-bg-nav: #dce0e8;
+	--sl-color-bg-sidebar: #dce0e8;
+	--sl-color-hairline-light: #bcc0cc;
 
   --sl-color-orange-high: hsl(var(--sl-hue-orange), 80%, 25%);
 	--sl-color-orange: hsl(var(--sl-hue-orange), 90%, 60%);
@@ -28,4 +32,6 @@
 	--sl-color-red-high: hsl(var(--sl-hue-red), 80%, 30%);
 	--sl-color-red: hsl(var(--sl-hue-red), 90%, 60%);
 	--sl-color-red-low: hsl(var(--sl-hue-red), 80%, 90%);
+
+  color-scheme: light;
 }
