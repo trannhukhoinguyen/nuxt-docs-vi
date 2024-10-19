@@ -15,3 +15,45 @@
 
 ## Usage
 
+1. Install the theme package to your project with your preferred package manager:
+```sh
+npm install starlight-theme-catppuccin
+pnpm add starlight-theme-catppuccin
+yarn add starlight-theme-catppuccin
+```
+
+2. Add the theme to your Starlight config.
+
+```ts
+import catppuccin from "starlight-theme-catppuccin";
+
+export default defineConfig({
+  // ...
+  integrations: [
+    starlight({
+      // ...
+      plugins: [
+        catppuccin()
+      ]
+    })
+  ]
+})
+```
+
+3. (Optional) Customize your theme for light/dark mode using `{flavor}-{accent}`.
+
+```ts
+import catppuccin from "starlight-theme-catppuccin";
+
+export default defineConfig({
+  // ...
+  integrations: [
+    starlight({
+      // ...
+      plugins: [
+        catppuccin({ dark: "frappe-sky", light: "latte-sky" })
+      ]
+    })
+  ]
+})
+```
