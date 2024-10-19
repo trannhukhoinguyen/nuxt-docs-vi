@@ -35,6 +35,9 @@ importers:
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
+      starlight-package-managers:
+        specifier: ^0.7.0
+        version: 0.7.0(@astrojs/starlight@0.28.3(astro@4.15.3(rollup@4.21.2)(typescript@5.5.4)))(astro@4.15.3(rollup@4.21.2)(typescript@5.5.4))
       starlight-theme-catppuccin:
         specifier: workspace:*
         version: link:../../packages/starlight-theme-catppuccin
@@ -1998,6 +2001,13 @@ packages:
 
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
+
+  starlight-package-managers@0.7.0:
+    resolution: {integrity: sha512-7T0Wd4OhtyTxr7yxplO1gt1B0Ped4dxRQ0T3uOp7qM+5UmQiyQE6PMxwmN+4hVuaVQ1zpDdZR6nQrptewS+m9g==}
+    engines: {node: '>=18.14.1'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.22.0'
+      astro: '>=4.2.7'
 
   stdin-discarder@0.2.2:
     resolution: {integrity: sha512-UhDfHmA92YAlNnCfhmq0VeNL5bDbiZGg7sZ2IvPsXubGkiNa9EC+tUTsjBRsYUAz87btI6/1wf4XoVvQ3uRnmQ==}
@@ -4984,6 +4994,11 @@ snapshots:
   space-separated-tokens@2.0.2: {}
 
   sprintf-js@1.0.3: {}
+
+  starlight-package-managers@0.7.0(@astrojs/starlight@0.28.3(astro@4.15.3(rollup@4.21.2)(typescript@5.5.4)))(astro@4.15.3(rollup@4.21.2)(typescript@5.5.4)):
+    dependencies:
+      '@astrojs/starlight': 0.28.3(astro@4.15.3(rollup@4.21.2)(typescript@5.5.4))
+      astro: 4.15.3(rollup@4.21.2)(typescript@5.5.4)
 
   stdin-discarder@0.2.2: {}
 
