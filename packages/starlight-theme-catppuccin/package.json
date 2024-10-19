@@ -24,7 +24,7 @@
 	],
 	"scripts": {
 		"dev": "nodemon --watch \"./templates/*\" -e tera --exec \"pnpm build\"",
-		"build": "whiskers --flavor mocha templates/dark.tera && whiskers --flavor macchiato templates/dark.tera && whiskers --flavor frappe templates/dark.tera && whiskers --flavor latte templates/light.tera"
+		"build": "whiskers templates/template.tera"
 	},
 	"devDependencies": {
 		"astro": "^4.15.3",

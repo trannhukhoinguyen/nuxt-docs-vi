@@ -14,7 +14,7 @@ export default defineConfig({
 			},
 			favicon: "/favicon.png",
 			social: {
-				github: "https://github.com/withastro/starlight",
+				github: "https://github.com/TheOtterlord/catppuccin-starlight",
 			},
 			expressiveCode: {
 				themes: ['catppuccin-mocha', 'catppuccin-latte'],
