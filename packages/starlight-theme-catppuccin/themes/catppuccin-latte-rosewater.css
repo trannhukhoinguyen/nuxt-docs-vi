@@ -3,16 +3,16 @@
 	--sl-color-accent-low: hsl(11, 59%, 7%);
 	--sl-color-accent: hsl(11, 59%, 47%);
 	--sl-color-accent-high: hsl(11, 59%, 67%);
-	--sl-color-white: #17181c;
-	--sl-color-gray-1: #24272f;
-	--sl-color-gray-2: #4c4f69;
-	--sl-color-gray-3: #5c5f77;
+	--sl-color-white: #4c4f69;
+	--sl-color-gray-1: #5c5f77;
+	--sl-color-gray-2: #6c6f85;
+	--sl-color-gray-3: #8c8fa1;
 	--sl-color-gray-4: #bcc0cc;
 	--sl-color-gray-5: #ccd0da;
 	--sl-color-gray-6: #e6e9ef;
 	--sl-color-gray-7: #dce0e8;
 	--sl-color-black: #eff1f5;
-	
+
 	--sl-color-bg-nav: #dce0e8;
 	--sl-color-bg-sidebar: #dce0e8;
 	--sl-color-hairline-light: #bcc0cc;

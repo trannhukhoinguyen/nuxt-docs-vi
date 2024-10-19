@@ -11,16 +11,16 @@ whiskers:
 	--sl-color-accent-low: {{flavor.colors[accent] | sub(lightness=60) | css_hsl}};
 	--sl-color-accent: {{flavor.colors[accent] | sub(lightness=20) | css_hsl}};
 	--sl-color-accent-high: {{flavor.colors[accent] | css_hsl}};
-	--sl-color-white: #17181c;
-	--sl-color-gray-1: #24272f;
-	--sl-color-gray-2: #{{text.hex}};
-	--sl-color-gray-3: #{{subtext1.hex}};
+	--sl-color-white: #{{text.hex}};
+	--sl-color-gray-1: #{{subtext1.hex}};
+	--sl-color-gray-2: #{{subtext0.hex}};
+	--sl-color-gray-3: #{{overlay1.hex}};
 	--sl-color-gray-4: #{{surface1.hex}};
 	--sl-color-gray-5: #{{surface0.hex}};
 	--sl-color-gray-6: #{{mantle.hex}};
 	--sl-color-gray-7: #{{crust.hex}};
 	--sl-color-black: #{{base.hex}};
-	
+
 	--sl-color-bg-nav: #{{crust.hex}};
 	--sl-color-bg-sidebar: #{{crust.hex}};
 	--sl-color-hairline-light: #{{surface1.hex}};
