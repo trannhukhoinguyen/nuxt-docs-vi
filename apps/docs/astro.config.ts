@@ -37,7 +37,7 @@ export default defineConfig({
 					autogenerate: { directory: "reference" },
 				},
 			],
-			plugins: [catppuccin()],
+			plugins: [catppuccin({ dark: 'mocha-mauve', light: 'latte-mauve' })],
 		}),
 	],
 	devToolbar: {
