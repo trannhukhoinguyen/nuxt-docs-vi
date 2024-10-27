@@ -9,12 +9,12 @@ whiskers:
 /* Dark mode colors. */
 :root{{if(cond=flavor.light, t="[data-theme='light']", f="")}} {
 	--sl-color-accent-low: {{if(cond=flavor.dark, t=flavor.colors[accent] | sub(lightness=60) | css_hsl, f=flavor.colors[accent] | sub(lightness=22) | css_hsl)}};
-	--sl-color-accent: {{if(cond=flavor.dark, t=flavor.colors[accent] | sub(lightness=20) | css_hsl, f=flavor.colors[accent] | sub(lightness=17) | css_hsl)}};
+	--sl-color-accent: {{if(cond=flavor.dark, t=flavor.colors[accent] | sub(lightness=20) | css_hsl, f=flavor.colors[accent] | css_hsl)}};
 	--sl-color-accent-high: {{if(cond=flavor.dark, t=flavor.colors[accent] | css_hsl, f=flavor.colors[accent] | sub(lightness=30) | css_hsl)}};
 	--sl-color-white: #{{text.hex}};
 	--sl-color-gray-1: #{{subtext1.hex}};
 	--sl-color-gray-2: #{{subtext0.hex}};
-	--sl-color-gray-3: #{{overlay1.hex}};
+	--sl-color-gray-3: #{{overlay2.hex}};
 	--sl-color-gray-4: #{{surface1.hex}};
 	--sl-color-gray-5: #{{surface0.hex}};
 	--sl-color-gray-6: #{{mantle.hex}};
