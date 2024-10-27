@@ -18,6 +18,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: CARGO
+        run: cargo install catppuccin-whiskers
+        # working-directory: packages/starlight-theme-catppuccin
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install, build, and upload your site
