@@ -23,6 +23,8 @@ jobs:
         # working-directory: packages/starlight-theme-catppuccin
       - name: Checkout your repository using git
         uses: actions/checkout@v4
+      - name: Install & build the package
+        run: pnpm build --filter packages/starlight-theme-catppuccin
       - name: Install, build, and upload your site
         uses: withastro/action@v2
         with:
