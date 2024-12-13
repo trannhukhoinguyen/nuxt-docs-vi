@@ -1,6 +1,6 @@
 {
 	"name": "starlight-theme-catppuccin",
-	"version": "1.0.3",
+	"version": "2.0.0",
 	"type": "module",
 	"exports": {
 		".": "./index.ts",
@@ -27,13 +27,13 @@
 		"build": "whiskers templates/template.tera"
 	},
 	"devDependencies": {
-		"astro": "^4.15.3",
+		"astro": "catalog:",
 		"nodemon": "^3.1.7",
-		"typescript": "^5.5.4"
+		"typescript": "catalog:"
 	},
 	"peerDependencies": {
-		"@astrojs/starlight": "^0.28.0",
-		"astro": "^4.0.0"
+		"@astrojs/starlight": "^0.30.0",
+		"astro": "^5.0.0"
 	},
 	"dependencies": {
 		"@astrojs/starlight": "catalog:"
