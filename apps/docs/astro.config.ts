@@ -4,7 +4,7 @@ import catppuccin from "starlight-theme-catppuccin";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://catppuccin-starlight.otterlord.dev',
+	site: "https://catppuccin-starlight.otterlord.dev",
 	integrations: [
 		starlight({
 			title: "Catppuccin",
@@ -13,11 +13,26 @@ export default defineConfig({
 				alt: "Catppuccin logo",
 			},
 			favicon: "/favicon.png",
-			social: {
-				github: "https://github.com/TheOtterlord/catppuccin-starlight",
-			},
+			social: [
+				{
+					label: "GitHub",
+					icon: "github",
+					href: "https://github.com/TheOtterlord/catppuccin-starlight",
+				},
+			],
 			expressiveCode: {
-				themes: ['catppuccin-mocha', 'catppuccin-latte'],
+				themes: ["catppuccin-mocha", "catppuccin-latte"],
+				styleOverrides: {
+					textMarkers: {
+						insBackground:
+							"color-mix(in oklab, var(--sl-color-green-high) 25%, var(--sl-color-gray-6));",
+						insBorderColor: "var(--sl-color-gray-5)",
+						delBackground:
+							"color-mix(in oklab, var(--sl-color-red-high) 25%, var(--sl-color-gray-6));",
+						delBorderColor: "var(--sl-color-gray-5)",
+					},
+	        codeBackground: "var(--sl-color-gray-6)",
+				},
 			},
 			customCss: [
 				"@fontsource/inter/400.css",
@@ -37,10 +52,7 @@ export default defineConfig({
 					autogenerate: { directory: "reference" },
 				},
 			],
-			plugins: [catppuccin({ dark: 'mocha-mauve', light: 'latte-mauve' })],
+			plugins: [catppuccin()],
 		}),
-	],
-	devToolbar: {
-		enabled: false,
-	},
+	]
 });

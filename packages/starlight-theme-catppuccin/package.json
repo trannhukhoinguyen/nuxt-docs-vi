@@ -23,8 +23,8 @@
 		"catppuccin"
 	],
 	"scripts": {
-		"dev": "nodemon --watch \"./templates/*\" -e tera --exec \"pnpm build\"",
-		"build": "whiskers templates/template.tera"
+		"dev": "nodemon --watch \"./starlight.tera\" -e tera --exec \"pnpm build\"",
+		"build": "whiskers starlight.tera"
 	},
 	"devDependencies": {
 		"astro": "catalog:",
@@ -32,7 +32,7 @@
 		"typescript": "catalog:"
 	},
 	"peerDependencies": {
-		"@astrojs/starlight": "^0.30.0",
+		"@astrojs/starlight": "^0.32.0",
 		"astro": "^5.0.0"
 	},
 	"dependencies": {

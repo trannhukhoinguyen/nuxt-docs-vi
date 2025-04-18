@@ -1,7 +1,8 @@
 import type { StarlightPlugin } from "@astrojs/starlight/types";
 
-type DarkFlavors = "mocha" | "macchiato" | "frappe";
-type Accents =
+type DarkFlavor = "mocha" | "macchiato" | "frappe";
+type LightFlavor = "latte";
+type Accent =
 	| "rosewater"
 	| "flamingo"
 	| "pink"
@@ -18,21 +19,27 @@ type Accents =
 	| "lavender";
 
 interface Config {
-	dark?: `${DarkFlavors}-${Accents}`;
-	light?: `latte-${Accents}`;
+	dark?: {
+		flavor?: DarkFlavor;
+		accent?: Accent;
+	};
+	light?: {
+		flavor?: LightFlavor;
+		accent?: Accent;
+	};
 }
 
 export default function createPlugin(config?: Config): StarlightPlugin {
-	const { dark, light } = config ?? {}
+	const { dark, light } = config ?? {};
 	return {
 		name: "starlight-theme-catppuccin",
 		hooks: {
-			setup: ({ config, updateConfig }) => {
+			"config:setup": ({ config, updateConfig }) => {
 				updateConfig({
 					customCss: [
-						...config.customCss ?? [],
-						`starlight-theme-catppuccin/themes/catppuccin-${dark ?? 'mocha-mauve'}.css`,
-						`starlight-theme-catppuccin/themes/catppuccin-${light ?? 'latte-mauve'}.css`,
+						...(config.customCss ?? []),
+						`starlight-theme-catppuccin/themes/catppuccin-${dark?.flavor ?? "mocha"}-${dark?.accent ?? "mauve"}.css`,
+						`starlight-theme-catppuccin/themes/catppuccin-${light?.flavor ?? "latte"}-${light?.accent ?? "mauve"}.css`,
 						"starlight-theme-catppuccin/styles/shared.css",
 					],
 				});
