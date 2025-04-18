@@ -38,6 +38,9 @@ importers:
       '@astrojs/starlight':
         specifier: 'catalog:'
         version: 0.34.0(astro@5.7.4(rollup@4.40.0)(typescript@5.5.4)(yaml@2.5.1))
+      '@catppuccin/starlight':
+        specifier: workspace:*
+        version: link:../../packages/starlight-theme-catppuccin
       '@fontsource/inter':
         specifier: ^5.1.0
         version: 5.1.0
@@ -50,9 +53,6 @@ importers:
       starlight-package-managers:
         specifier: ^0.8.0
         version: 0.8.0(@astrojs/starlight@0.34.0(astro@5.7.4(rollup@4.40.0)(typescript@5.5.4)(yaml@2.5.1)))(astro@5.7.4(rollup@4.40.0)(typescript@5.5.4)(yaml@2.5.1))
-      starlight-theme-catppuccin:
-        specifier: workspace:*
-        version: link:../../packages/starlight-theme-catppuccin
       typescript:
         specifier: 'catalog:'
         version: 5.5.4

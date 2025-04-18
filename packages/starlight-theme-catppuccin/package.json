@@ -1,6 +1,6 @@
 {
-	"name": "starlight-theme-catppuccin",
-	"version": "2.0.0",
+	"name": "@catppuccin/starlight",
+	"version": "0.0.0",
 	"type": "module",
 	"exports": {
 		".": "./index.ts",

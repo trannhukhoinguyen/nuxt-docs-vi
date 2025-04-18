@@ -9,11 +9,11 @@ import { PackageManagers } from 'starlight-package-managers'
 <Steps>
 
 1. Install the theme package to your project with your preferred package manager:
-   <PackageManagers pkg="starlight-theme-catppuccin"/>
+   <PackageManagers pkg="@catppuccin/starlight"/>
 
 2. Add the theme to your Starlight config.
    ```ts title="astro.config.mjs" ins={1,9}
-   import catppuccin from "starlight-theme-catppuccin";
+   import catppuccin from "@catppuccin/starlight";
 
    export default defineConfig({
      // ...
@@ -28,9 +28,9 @@ import { PackageManagers } from 'starlight-package-managers'
    })
    ```
 
-2. (Optional) Customize your theme for light/dark mode using `{flavor}-{accent}`.
-   ```ts title="astro.config.mjs" /{ dark: "macchiato-sky", light: "latte-sky" }/
-   import catppuccin from "starlight-theme-catppuccin";
+2. (Optional) Customize your theme for light/dark mode using `flavor` and `accent`.
+   ```ts title="astro.config.mjs" ins={10-11}
+   import catppuccin from "@catppuccin/starlight";
 
    export default defineConfig({
      // ...
@@ -38,8 +38,11 @@ import { PackageManagers } from 'starlight-package-managers'
        starlight({
          // ...
          plugins: [
-           catppuccin({ dark: "macchiato-sky", light: "latte-sky" })
-         ]
+           catppuccin({ 
+             dark: { flavor: "macchiato", accent: "sky" },
+             light: { flavor: "latte", accent: "sky" }
+           })
+          ]
        })
      ]
    })

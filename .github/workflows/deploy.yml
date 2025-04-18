@@ -18,8 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: CARGO
-        run: cargo install catppuccin-whiskers
+      - uses: catppuccin/setup-whiskers@v1.0.0
       - name: Checkout your repository using git
         uses: actions/checkout@v4
       - name: Install & build the package

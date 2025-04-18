@@ -36,15 +36,15 @@
 
 1. Install the theme package to your project with your preferred package manager:
 ```sh
-npm install starlight-theme-catppuccin
-pnpm add starlight-theme-catppuccin
-yarn add starlight-theme-catppuccin
+npm install @catppuccin/starlight
+pnpm add @catppuccin/starlight
+yarn add @catppuccin/starlight
 ```
 
 2. Add the theme to your Starlight config.
 
 ```ts
-import catppuccin from "starlight-theme-catppuccin";
+import catppuccin from "@catppuccin/starlight";
 
 export default defineConfig({
   // ...
@@ -59,10 +59,10 @@ export default defineConfig({
 })
 ```
 
-3. (Optional) Customize your theme for light/dark mode using `{flavor}-{accent}`.
+3. (Optional) Customize your theme for light/dark mode using `flavor` and `accent`.
 
 ```ts
-import catppuccin from "starlight-theme-catppuccin";
+import catppuccin from "@catppuccin/starlight";
 
 export default defineConfig({
   // ...
@@ -70,7 +70,10 @@ export default defineConfig({
     starlight({
       // ...
       plugins: [
-        catppuccin({ dark: "macchiato-sky", light: "latte-sky" })
+        catppuccin({ 
+          dark: { flavor: "macchiato", accent: "sky" },
+          light: { flavor: "latte", accent: "sky" }
+        })
       ]
     })
   ]

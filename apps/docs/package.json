@@ -16,7 +16,7 @@
     "astro": "catalog:",
     "sharp": "catalog:",
     "starlight-package-managers": "^0.8.0",
-    "starlight-theme-catppuccin": "workspace:*",
+    "@catppuccin/starlight": "workspace:*",
     "typescript": "catalog:"
   }
 }
