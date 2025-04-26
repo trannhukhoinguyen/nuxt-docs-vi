@@ -8,12 +8,23 @@
     "provenance": true,
     "registry": "https://registry.npmjs.org"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/catppuccin/starlight.git",
+    "directory": "packages/catppuccin-starlight"
+  },
+  "homepage": "https://starlight.catppuccin.com/",
+  "bugs": {
+    "url": "https://github.com/catppuccin/starlight/issues"
+  },
+  "sponsor": {
+    "url": "https://opencollective.com/catppuccin"
+  },
   "exports": {
     ".": "./index.ts",
     "./styles/*": "./styles/*",
     "./themes/*": "./themes/*"
   },
-  "homepage": "https://starlight.catppuccin.com/",
   "author": "Reuben Tier <otterlord.dev@gmail.com>",
   "contributors": [
     "Louis Escher <louisescher@proton.me>"
