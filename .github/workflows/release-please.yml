@@ -36,6 +36,7 @@ jobs:
         with:
           cache: pnpm
           node-version: 22
+          registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
       - run: pnpm publish
         working-directory: ./packages/catppuccin-starlight
