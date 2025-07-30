@@ -71,39 +71,39 @@ export default defineConfig({
               items: [
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/key-concepts/auto-imports"
                 },
               ]
             },
@@ -112,67 +112,67 @@ export default defineConfig({
               items: [
                 {
                   label: ".nuxt",
-                  slug: "guide/directory_structure/nuxt"
+                  slug: "guide/directory-structure/nuxt"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
                 {
                   label: "Auto-imports",
-                  slug: "guide/directory_structure/auto_imports"
+                  slug: "guide/directory-structure/auto-imports"
                 },
               ]
             },
@@ -181,7 +181,7 @@ export default defineConfig({
               items: [
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/going-further/auto-imports"
                 },
               ]
             },
@@ -190,7 +190,7 @@ export default defineConfig({
               items: [
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/recipes/auto-imports"
                 },
               ]
             },
@@ -199,7 +199,7 @@ export default defineConfig({
               items: [
                 {
                   label: "Auto-imports",
-                  slug: "guide/key_concepts/auto_imports"
+                  slug: "guide/best-practices/auto-imports"
                 },
               ]
             },
