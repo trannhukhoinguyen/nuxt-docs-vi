@@ -74,36 +74,36 @@ export default defineConfig({
                   slug: "guide/key-concepts/auto-imports"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Nuxt Lifecycle",
+                  slug: "guide/key-concepts/nuxt-lifecycle"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Vue.js Development",
+                  slug: "guide/key-concepts/vuejs-development"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Rendering Modes",
+                  slug: "guide/key-concepts/rendering-modes"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Server Engine",
+                  slug: "guide/key-concepts/server-engine"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Modules",
+                  slug: "guide/key-concepts/modules"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "ES Modules",
+                  slug: "guide/key-concepts/es-modules"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "TypeScript",
+                  slug: "guide/key-concepts/typescript"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/key-concepts/auto-imports"
+                  label: "Code Style",
+                  slug: "guide/key-concepts/code-style"
                 },
               ]
             },
@@ -115,64 +115,76 @@ export default defineConfig({
                   slug: "guide/directory-structure/nuxt"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: ".output",
+                  slug: "guide/directory-structure/output"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "app",
+                  items: [
+                    { label: "assets", slug: "guide/directory-structure/app/assets" },
+                    { label: "components", slug: "guide/directory-structure/app/components" },
+                    { label: "composables", slug: "guide/directory-structure/app/composables" },
+                    { label: "layouts", slug: "guide/directory-structure/app/layouts" },
+                    { label: "middleware", slug: "guide/directory-structure/app/middleware" },
+                    { label: "pages", slug: "guide/directory-structure/app/pages" },
+                    { label: "plugins", slug: "guide/directory-structure/app/plugins" },
+                    { label: "utils", slug: "guide/directory-structure/app/utils" },
+                    { label: "app.vue", slug: "guide/directory-structure/app/app" },
+                    { label: "app.config.ts", slug: "guide/directory-structure/app/app-config" },
+                    { label: "error.vue", slug: "guide/directory-structure/app/error" },
+                  ],
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "content",
+                  slug: "guide/directory-structure/content"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "modules",
+                  slug: "guide/directory-structure/modules"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "node_modules",
+                  slug: "guide/directory-structure/node-modules"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "public",
+                  slug: "guide/directory-structure/public"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "server",
+                  slug: "guide/directory-structure/server"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "shared",
+                  slug: "guide/directory-structure/shared"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: ".env",
+                  slug: "guide/directory-structure/env"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: ".gitignore",
+                  slug: "guide/directory-structure/gitignore"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: ".nuxtignore",
+                  slug: "guide/directory-structure/nuxtignore"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: ".nuxtrc",
+                  slug: "guide/directory-structure/nuxtrc"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "nuxt.config.ts",
+                  slug: "guide/directory-structure/nuxt-config"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "package.json",
+                  slug: "guide/directory-structure/package"
                 },
                 {
-                  label: "Auto-imports",
-                  slug: "guide/directory-structure/auto-imports"
+                  label: "tsconfig.json",
+                  slug: "guide/directory-structure/tsconfig"
                 },
               ]
             },
@@ -236,32 +248,7 @@ export default defineConfig({
 
 
 
-/*Nuxt Lifecycle
-Vue.js Development
-Rendering Modes
-Server Engine
-Modules
-ES Modules
-TypeScript
-Code Style
-
-
-.output
-app
-content
-modules
-node_modules
-public
-server
-shared
-  .env
-  .gitignore
-  .nuxtignore
-  .nuxtrc
-nuxt.config.ts
-package.json
-tsconfig.json
-
+/*
 Events
 Experimental Features
 Features
