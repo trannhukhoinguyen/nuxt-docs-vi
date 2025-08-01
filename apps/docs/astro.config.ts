@@ -192,8 +192,52 @@ export default defineConfig({
               label: "Going Further",
               items: [
                 {
-                  label: "Auto-imports",
-                  slug: "guide/going-further/auto-imports"
+                  label: "Events",
+                  slug: "guide/going-further/events"
+                },
+                {
+                  label: "Experimental Features",
+                  slug: "guide/going-further/experimental-features"
+                },
+                {
+                  label: "Features",
+                  slug: "guide/going-further/features"
+                },
+                {
+                  label: "How Nuxt Works?",
+                  slug: "guide/going-further/how-nuxt-works"
+                },
+                {
+                  label: "Runtime Config",
+                  slug: "guide/going-further/runtime-config"
+                },
+                {
+                  label: "Nightly Release Channel",
+                  slug: "guide/going-further/nightly-release-channel"
+                },
+                {
+                  label: "Lifecycle Hooks",
+                  slug: "guide/going-further/lifecycle-hooks"
+                },
+                {
+                  label: "Module Author Guide",
+                  slug: "guide/going-further/module-author-guide"
+                },
+                {
+                  label: "Nuxt Kit",
+                  slug: "guide/going-further/nuxt-kit"
+                },
+                {
+                  label: "NuxtApp",
+                  slug: "guide/going-further/nuxtapp"
+                },
+                {
+                  label: "Authoring Nuxt Layers",
+                  slug: "guide/going-further/authoring-nuxt-layers"
+                },
+                {
+                  label: "Debugging",
+                  slug: "guide/going-further/debugging"
                 },
               ]
             },
@@ -201,8 +245,20 @@ export default defineConfig({
               label: "Recipes",
               items: [
                 {
-                  label: "Auto-imports",
-                  slug: "guide/recipes/auto-imports"
+                  label: "Custom Routing",
+                  slug: "guide/recipes/custom-routing"
+                },
+                {
+                  label: "Vite Plugins",
+                  slug: "guide/recipes/vite-plugins"
+                },
+                {
+                  label: "Custom useFetch",
+                  slug: "guide/recipes/custom-usefetch"
+                },
+                {
+                  label: "Sessions and Authentication",
+                  slug: "guide/recipes/sessions-and-authentication"
                 },
               ]
             },
@@ -210,8 +266,16 @@ export default defineConfig({
               label: "Best Practices",
               items: [
                 {
-                  label: "Auto-imports",
-                  slug: "guide/best-practices/auto-imports"
+                  label: "Nuxt and hydration",
+                  slug: "guide/best-practices/hydration"
+                },
+                {
+                  label: "Nuxt Performance",
+                  slug: "guide/best-practices/nuxt-performance"
+                },
+                {
+                  label: "Nuxt Plugins",
+                  slug: "guide/best-practices/nuxt-plugins"
                 },
               ]
             },
@@ -227,6 +291,62 @@ export default defineConfig({
                   label: "<ClientOnly>",
                   slug: "api/components/client-only"
                 },
+                {
+                  label: "<DevOnly>",
+                  slug: "api/components/dev-only"
+                },
+                {
+                  label: "<NuxtClientFallback>",
+                  slug: "api/components/nuxt-client-fallback"
+                },
+                {
+                  label: "<NuxtPicture>",
+                  slug: "api/components/nuxt-picture"
+                },
+                {
+                  label: "<Teleport>",
+                  slug: "api/components/teleport"
+                },
+                {
+                  label: "<NuxtRouteAnnouncer>",
+                  slug: "api/components/nuxt-route-announcer"
+                },
+                {
+                  label: "<NuxtTime>",
+                  slug: "api/components/nuxt-time"
+                },
+                {
+                  label: "<NuxtPage>",
+                  slug: "api/components/nuxt-page"
+                },
+                {
+                  label: "<NuxtLayout>",
+                  slug: "api/components/nuxt-layout"
+                },
+                {
+                  label: "<NuxtLink>",
+                  slug: "api/components/nuxt-link"
+                },
+                {
+                  label: "<NuxtLoadingIndicator>",
+                  slug: "api/components/nuxt-loading-indicator"
+                },
+                {
+                  label: "<NuxtErrorBoundary>",
+                  slug: "api/components/nuxt-error-boundary"
+                },
+                {
+                  label: "<NuxtWelcome>",
+                  slug: "api/components/nuxt-welcome"
+                },
+                {
+                  label: "<NuxtIsland>",
+                  slug: "api/components/nuxt-island"
+                },
+                {
+                  label: "<NuxtImg>",
+                  slug: "api/components/nuxt-img"
+                },
               ]
             },
 						{
@@ -238,6 +358,50 @@ export default defineConfig({
                 },
               ]
             },
+						{
+              label: "Utils",
+              items: [
+                {
+                  label: "$fetch",
+                  slug: "api/utils/fetch"
+                },
+              ]
+            },
+						{
+              label: "Commands",
+              items: [
+                {
+                  label: "nuxt add",
+                  slug: "api/commands/nuxt add"
+                },
+              ]
+            },
+						{
+              label: "Nuxt Kit",
+              items: [
+                {
+                  label: "Modules",
+                  slug: "api/nuxt-kit/modules"
+                },
+              ]
+            },
+						{
+              label: "Advanced",
+              items: [
+                {
+                  label: "Lifecycle Hooks",
+                  slug: "api/advanced/lifecycle-hooks"
+                },
+                {
+                  label: "Import meta",
+                  slug: "api/advanced/import-meta"
+                },
+              ]
+            },
+						{
+              label: "Nuxt Configuration",
+              slug: "api/nuxt-config"
+            },
 					],
 				},
 			],
@@ -245,28 +409,104 @@ export default defineConfig({
 		}),
 	],
 });
-
-
-
 /*
-Events
-Experimental Features
-Features
-How Nuxt Works?
-  Runtime Config
-Nightly Release Channel
-Lifecycle Hooks
-Module Author Guide
-Nuxt Kit
-NuxtApp
-Authoring Nuxt Layers
-Debugging
 
-Custom Routing
-Vite Plugins
-Custom useFetch
-Sessions and Authentication
 
-Nuxt and hydration
-Nuxt Performance
-Nuxt Plugins*/
+useAppConfig
+useAsyncData
+useCookie
+useError
+useFetch
+useHead
+useHeadSafe
+useHydration
+useLazyAsyncData
+useLazyFetch
+useLoadingIndicator
+useNuxtApp
+useNuxtData
+usePreviewMode
+useRequestEvent
+useRequestFetch
+useRequestHeader
+useRequestHeaders
+useRequestURL
+useResponseHeader
+useRoute
+useRouteAnnouncerNew
+useRouter
+useRuntimeConfig
+useRuntimeHook
+useSeoMeta
+useServerSeoMeta
+useState
+
+3. Utils
+
+abortNavigation
+addRouteMiddleware
+callOnceNew
+clearError
+clearNuxtData
+clearNuxtState
+createError
+defineLazyHydrationComponent
+defineNuxtComponent
+defineNuxtPlugin
+defineNuxtRouteMiddleware
+definePageMeta
+defineRouteRules
+navigateTo
+onBeforeRouteLeave
+onBeforeRouteUpdate
+onNuxtReady
+prefetchComponents
+preloadComponents
+preloadRouteComponents
+prerenderRoutes
+refreshCookieNew
+refreshNuxtData
+reloadNuxtApp
+setPageLayout
+setResponseStatus
+showError
+updateAppConfig
+
+4. Commands
+nuxt add
+nuxt analyze
+nuxt build
+nuxt build-module
+nuxt cleanup
+nuxt dev
+nuxt devtools
+nuxt generate
+nuxt info
+create nuxt
+nuxt module
+nuxt prepare
+nuxt preview
+nuxt typecheck
+nuxt upgrade
+
+5. Nuxt Kit
+
+Runtime Config
+Templates
+Nitro
+Resolving
+Logging
+Builder
+Examples
+Programmatic Usage
+Compatibility
+Auto-imports
+Components
+Context
+Pages
+Layout
+Plugins
+
+
+
+* */
