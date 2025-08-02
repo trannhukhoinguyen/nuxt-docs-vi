@@ -356,6 +356,118 @@ export default defineConfig({
                   label: "onPrehydrate",
                   slug: "api/composables/on-prehydrate"
                 },
+                {
+                  label: "useAppConfig",
+                  slug: "api/composables/use-app-config"
+                },
+                {
+                  label: "useAsyncData",
+                  slug: "api/composables/use-async-data"
+                },
+                {
+                  label: "useCookie",
+                  slug: "api/composables/use-cookie"
+                },
+                {
+                  label: "useError",
+                  slug: "api/composables/use-error"
+                },
+                {
+                  label: "useFetch",
+                  slug: "api/composables/use-fetch"
+                },
+                {
+                  label: "useHead",
+                  slug: "api/composables/use-head"
+                },
+                {
+                  label: "useHeadSafe",
+                  slug: "api/composables/use-head-safe"
+                },
+                {
+                  label: "useHydration",
+                  slug: "api/composables/use-hydration"
+                },
+                {
+                  label: "useLazyAsyncData",
+                  slug: "api/composables/use-lazy-async-data"
+                },
+                {
+                  label: "useLazyFetch",
+                  slug: "api/composables/use-lazy-fetch"
+                },
+                {
+                  label: "useLoadingIndicator",
+                  slug: "api/composables/use-loading-indicator"
+                },
+                {
+                  label: "useNuxtApp",
+                  slug: "api/composables/use-nuxt-app"
+                },
+                {
+                  label: "useNuxtData",
+                  slug: "api/composables/use-nuxt-data"
+                },
+                {
+                  label: "usePreviewMode",
+                  slug: "api/composables/use-preview-mode"
+                },
+                {
+                  label: "useRequestEvent",
+                  slug: "api/composables/use-request-event"
+                },
+                {
+                  label: "useRequestFetch",
+                  slug: "api/composables/use-request-fetch"
+                },
+                {
+                  label: "useRequestHeader",
+                  slug: "api/composables/use-request-header"
+                },
+                {
+                  label: "useRequestHeaders",
+                  slug: "api/composables/use-request-headers"
+                },
+                {
+                  label: "useRequestURL",
+                  slug: "api/composables/use-request-url"
+                },
+                {
+                  label: "useResponseHeader",
+                  slug: "api/composables/use-response-header"
+                },
+                {
+                  label: "useRoute",
+                  slug: "api/composables/use-route"
+                },
+                {
+                  label: "useRouteAnnouncerNew",
+                  slug: "api/composables/use-route-announcer-new"
+                },
+                {
+                  label: "useRouter",
+                  slug: "api/composables/use-router"
+                },
+                {
+                  label: "useRuntimeConfig",
+                  slug: "api/composables/use-runtime-config"
+                },
+                {
+                  label: "useRuntimeHook",
+                  slug: "api/composables/use-runtime-hook"
+                },
+                {
+                  label: "useSeoMeta",
+                  slug: "api/composables/use-seo-meta"
+                },
+                {
+                  label: "useServerSeoMeta",
+                  slug: "api/composables/use-server-seo-meta"
+                },
+                {
+                  label: "useState",
+                  slug: "api/composables/use-state"
+                },
               ]
             },
 						{
@@ -365,6 +477,118 @@ export default defineConfig({
                   label: "$fetch",
                   slug: "api/utils/fetch"
                 },
+                {
+                  label: "abortNavigation",
+                  slug: "api/utils/abort-navigation"
+                },
+                {
+                  label: "addRouteMiddleware",
+                  slug: "api/utils/add-route-middleware"
+                },
+                {
+                  label: "callOnceNew",
+                  slug: "api/utils/call-once-new"
+                },
+                {
+                  label: "clearError",
+                  slug: "api/utils/clear-error"
+                },
+                {
+                  label: "clearNuxtData",
+                  slug: "api/utils/clear-nuxt-data"
+                },
+                {
+                  label: "clearNuxtState",
+                  slug: "api/utils/clear-nuxt-state"
+                },
+                {
+                  label: "createError",
+                  slug: "api/utils/create-error"
+                },
+                {
+                  label: "defineLazyHydrationComponent",
+                  slug: "api/utils/define-lazy-hydration-component"
+                },
+                {
+                  label: "defineNuxtComponent",
+                  slug: "api/utils/define-nuxt-component"
+                },
+                {
+                  label: "defineNuxtPlugin",
+                  slug: "api/utils/define-nuxt-plugin"
+                },
+                {
+                  label: "defineNuxtRouteMiddleware",
+                  slug: "api/utils/define-nuxt-route-middleware"
+                },
+                {
+                  label: "definePageMeta",
+                  slug: "api/utils/define-page-meta"
+                },
+                {
+                  label: "defineRouteRules",
+                  slug: "api/utils/define-route-rules"
+                },
+                {
+                  label: "navigateTo",
+                  slug: "api/utils/navigate-to"
+                },
+                {
+                  label: "onBeforeRouteLeave",
+                  slug: "api/utils/on-before-route-leave"
+                },
+                {
+                  label: "onBeforeRouteUpdate",
+                  slug: "api/utils/on-before-route-update"
+                },
+                {
+                  label: "onNuxtReady",
+                  slug: "api/utils/on-nuxt-ready"
+                },
+                {
+                  label: "prefetchComponents",
+                  slug: "api/utils/prefetch-components"
+                },
+                {
+                  label: "preloadComponents",
+                  slug: "api/utils/preload-components"
+                },
+                {
+                  label: "preloadRouteComponents",
+                  slug: "api/utils/preload-route-components"
+                },
+                {
+                  label: "prerenderRoutes",
+                  slug: "api/utils/prerender-routes"
+                },
+                {
+                  label: "refreshCookieNew",
+                  slug: "api/utils/refresh-cookie-new"
+                },
+                {
+                  label: "refreshNuxtData",
+                  slug: "api/utils/refresh-nuxt-data"
+                },
+                {
+                  label: "reloadNuxtApp",
+                  slug: "api/utils/reload-nuxt-app"
+                },
+                {
+                  label: "setPageLayout",
+                  slug: "api/utils/set-page-layout"
+                },
+                {
+                  label: "setResponseStatus",
+                  slug: "api/utils/set-response-status"
+                },
+                {
+                  label: "showError",
+                  slug: "api/utils/show-error"
+                },
+                {
+                  label: "updateAppConfig",
+                  slug: "api/utils/update-app-config"
+                },
               ]
             },
 						{
@@ -372,7 +596,63 @@ export default defineConfig({
               items: [
                 {
                   label: "nuxt add",
-                  slug: "api/commands/nuxt add"
+                  slug: "api/commands/nuxt-add"
+                },
+                {
+                  label: "nuxt analyze",
+                  slug: "api/commands/nuxt-analyze"
+                },
+                {
+                  label: "nuxt build",
+                  slug: "api/commands/nuxt-build"
+                },
+                {
+                  label: "nuxt build-module",
+                  slug: "api/commands/nuxt-build-module"
+                },
+                {
+                  label: "nuxt cleanup",
+                  slug: "api/commands/nuxt-cleanup"
+                },
+                {
+                  label: "nuxt dev",
+                  slug: "api/commands/nuxt-dev"
+                },
+                {
+                  label: "nuxt devtools",
+                  slug: "api/commands/nuxt-devtools"
+                },
+                {
+                  label: "nuxt generate",
+                  slug: "api/commands/nuxt-generate"
+                },
+                {
+                  label: "nuxt info",
+                  slug: "api/commands/nuxt-info"
+                },
+                {
+                  label: "create nuxt",
+                  slug: "api/commands/create-nuxt"
+                },
+                {
+                  label: "nuxt module",
+                  slug: "api/commands/nuxt-module"
+                },
+                {
+                  label: "nuxt prepare",
+                  slug: "api/commands/nuxt-prepare"
+                },
+                {
+                  label: "nuxt preview",
+                  slug: "api/commands/nuxt-preview"
+                },
+                {
+                  label: "nuxt typecheck",
+                  slug: "api/commands/nuxt-typecheck"
+                },
+                {
+                  label: "nuxt upgrade",
+                  slug: "api/commands/nuxt-upgrade"
                 },
               ]
             },
@@ -382,6 +662,66 @@ export default defineConfig({
                 {
                   label: "Modules",
                   slug: "api/nuxt-kit/modules"
+                },
+                {
+                  label: "Runtime Config",
+                  slug: "api/nuxt-kit/runtime-config"
+                },
+                {
+                  label: "Templates",
+                  slug: "api/nuxt-kit/templates"
+                },
+                {
+                  label: "Nitro",
+                  slug: "api/nuxt-kit/nitro"
+                },
+                {
+                  label: "Resolving",
+                  slug: "api/nuxt-kit/resolving"
+                },
+                {
+                  label: "Logging",
+                  slug: "api/nuxt-kit/logging"
+                },
+                {
+                  label: "Builder",
+                  slug: "api/nuxt-kit/builder"
+                },
+                {
+                  label: "Examples",
+                  slug: "api/nuxt-kit/examples"
+                },
+                {
+                  label: "Programmatic Usage",
+                  slug: "api/nuxt-kit/programmatic-usage"
+                },
+                {
+                  label: "Compatibility",
+                  slug: "api/nuxt-kit/compatibility"
+                },
+                {
+                  label: "Auto-imports",
+                  slug: "api/nuxt-kit/auto-imports"
+                },
+                {
+                  label: "Components",
+                  slug: "api/nuxt-kit/components"
+                },
+                {
+                  label: "Context",
+                  slug: "api/nuxt-kit/context"
+                },
+                {
+                  label: "Pages",
+                  slug: "api/nuxt-kit/pages"
+                },
+                {
+                  label: "Layout",
+                  slug: "api/nuxt-kit/layout"
+                },
+                {
+                  label: "Plugins",
+                  slug: "api/nuxt-kit/plugins"
                 },
               ]
             },
@@ -409,104 +749,3 @@ export default defineConfig({
 		}),
 	],
 });
-/*
-
-
-useAppConfig
-useAsyncData
-useCookie
-useError
-useFetch
-useHead
-useHeadSafe
-useHydration
-useLazyAsyncData
-useLazyFetch
-useLoadingIndicator
-useNuxtApp
-useNuxtData
-usePreviewMode
-useRequestEvent
-useRequestFetch
-useRequestHeader
-useRequestHeaders
-useRequestURL
-useResponseHeader
-useRoute
-useRouteAnnouncerNew
-useRouter
-useRuntimeConfig
-useRuntimeHook
-useSeoMeta
-useServerSeoMeta
-useState
-
-3. Utils
-
-abortNavigation
-addRouteMiddleware
-callOnceNew
-clearError
-clearNuxtData
-clearNuxtState
-createError
-defineLazyHydrationComponent
-defineNuxtComponent
-defineNuxtPlugin
-defineNuxtRouteMiddleware
-definePageMeta
-defineRouteRules
-navigateTo
-onBeforeRouteLeave
-onBeforeRouteUpdate
-onNuxtReady
-prefetchComponents
-preloadComponents
-preloadRouteComponents
-prerenderRoutes
-refreshCookieNew
-refreshNuxtData
-reloadNuxtApp
-setPageLayout
-setResponseStatus
-showError
-updateAppConfig
-
-4. Commands
-nuxt add
-nuxt analyze
-nuxt build
-nuxt build-module
-nuxt cleanup
-nuxt dev
-nuxt devtools
-nuxt generate
-nuxt info
-create nuxt
-nuxt module
-nuxt prepare
-nuxt preview
-nuxt typecheck
-nuxt upgrade
-
-5. Nuxt Kit
-
-Runtime Config
-Templates
-Nitro
-Resolving
-Logging
-Builder
-Examples
-Programmatic Usage
-Compatibility
-Auto-imports
-Components
-Context
-Pages
-Layout
-Plugins
-
-
-
-* */
