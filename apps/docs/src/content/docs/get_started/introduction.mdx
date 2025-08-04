@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: Introduction
+title: Giới thiệu
+description: Giới thiệu
 ---
 
 import { Card } from '@astrojs/starlight/components';
@@ -13,69 +13,82 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-## Card
-<Card title="Check this out" icon="star">Interesting content you want to highlight.</Card>
+Mục tiêu của Nuxt là làm cho việc phát triển web trở nên trực quan và hiệu suất cao, hướng đến Trải nghiệm Nhà phát triển tuyệt vời.
 
-## Link Card
-<LinkCard title="Example Guide" href="/guides/install/" description="Description goes here!" />
+***
 
-## Asides
-<Aside>Some content in an aside.</Aside>
-<Aside type="caution">Some cautionary content.</Aside>
-<Aside type="tip">
+Nuxt là một framework mã nguồn mở, miễn phí với cách thức trực quan và có thể mở rộng để tạo các ứng dụng web và website full-stack an toàn về kiểu, hiệu suất cao và đạt chuẩn production với Vue.js.
 
-  Other content is also supported in asides.
+Chúng tôi đã tạo ra mọi thứ để bạn có thể bắt đầu viết các tệp .vue ngay từ đầu, đồng thời tận hưởng tính năng hot module replacement (HMR) trong quá trình phát triển và một ứng dụng hiệu suất cao trong quá trình production với render phía máy chủ mặc định.
 
-  ```js
-  // A code snippet, for example.
-  ```
+Nuxt không bị ràng buộc bởi nhà cung cấp, cho phép bạn triển khai ứng dụng ở mọi nơi, ngay cả trên môi trường biên.
 
-</Aside>
-<Aside type="danger">Do not give your password to anyone.</Aside>
+## Tự động hóa và Quy ước
 
-## Badge
-<Badge text="Note" variant="note" />
-<Badge text="Success" variant="success" />
-<Badge text="Tip" variant="tip" />
-<Badge text="Caution" variant="caution" />
-<Badge text="Danger" variant="danger" />
-<Badge text="New" size="small" />
-<Badge text="New and improved" size="medium" />
-<Badge text="New, improved, and bigger" size="large" />
+Nuxt sử dụng các quy ước và cấu trúc thư mục có chủ ý để tự động hóa các tác vụ lặp lại và cho phép các nhà phát triển tập trung vào việc đẩy mạnh các tính năng. 
+Tệp cấu hình vẫn có thể tùy chỉnh và ghi đè các hành vi mặc định của nó.
 
-## Code
-export const exampleCode = `console.log('This could come from a file or CMS!');`;
-export const fileName = 'example.js';
-export const highlights = ['file', 'CMS'];
+- **Định tuyến dựa trên tệp**: xác định các tuyến dựa trên cấu trúc <a href="/guide/directory-structure/app/pages/"><span style="color: #00dc82">trang / **thư mục**</span></a> của bạn. 
+Điều này có thể giúp bạn sắp xếp ứng dụng dễ dàng hơn và tránh phải cấu hình tuyến đường thủ công.
+- **Chia mã**: Nuxt tự động chia mã của bạn thành các phần nhỏ hơn, giúp giảm thời gian tải ban đầu của ứng dụng.
+- **Kết xuất phía máy chủ ngay lập tức**: Nuxt được tích hợp sẵn các tính năng SSR, vì vậy bạn không cần phải tự thiết lập một máy chủ riêng.
+- **Tự động nhập**: Viết các thành phần và thành phần Vue trong các thư mục tương ứng và sử dụng chúng mà không cần phải nhập với các lợi ích của tree-shaking và các gói JS được tối ưu hóa.
+- **Tiện ích tìm nạp dữ liệu**: Nuxt cung cấp các thành phần để xử lý việc tìm nạp dữ liệu tương thích với SSR cũng như các chiến lược khác nhau.
+- **Hỗ trợ TypeScript không cần cấu hình**: Viết mã an toàn về kiểu mà không cần phải học TypeScript với các kiểu được tạo tự động và tsconfig.json của chúng tôi.
+- **Các công cụ xây dựng được cấu hình**: Chúng tôi sử dụng Vite theo mặc định để hỗ trợ thay thế mô-đun nóng (HMR) trong quá trình phát triển và đóng gói mã của bạn cho sản xuất với các phương pháp hay nhất được tích hợp sẵn.
 
-<Code code={exampleCode} lang="js" title={fileName} mark={highlights} />
+Nuxt xử lý những vấn đề này và cung cấp cả chức năng front-end và back-end để bạn có thể tập trung vào việc quan trọng nhất: **xây dựng ứng dụng web**.
 
-## File Tree
-<FileTree>
+## Kết xuất phía máy chủ
 
-  - astro.config.mjs
-  - package.json
-  - src
-  - components
-  - **Header.astro**
-  - Title.astro
-  - pages/
+Nuxt được tích hợp sẵn chức năng kết xuất phía máy chủ (SSR) mà không cần phải tự cấu hình máy chủ, mang lại nhiều lợi ích cho các ứng dụng web:
 
-</FileTree>
+Thời gian tải trang ban đầu nhanh hơn: Nuxt gửi một trang HTML đã được kết xuất đầy đủ đến trình duyệt, có thể được hiển thị ngay lập tức. Điều này có thể mang lại thời gian tải trang nhanh hơn và trải nghiệm người dùng (UX) tốt hơn, đặc biệt là trên các mạng hoặc thiết bị chậm hơn.
 
-## Icons
-<Icon name="star" />
-<Icon name="starlight" label="The Starlight logo" />
+Tối ưu hóa công cụ tìm kiếm (SEO): các công cụ tìm kiếm có thể lập chỉ mục các trang SSR tốt hơn vì nội dung HTML có sẵn ngay lập tức, thay vì yêu cầu JavaScript để hiển thị nội dung ở phía máy khách.
 
-## Link Button
-<LinkButton href="/guides/install/">Installation Guide</LinkButton>
-<LinkButton href="/guides/install/" variant="secondary">
-  Installation Guide
-</LinkButton>
+Hiệu suất tốt hơn trên các thiết bị có cấu hình thấp: nó giảm lượng JavaScript cần tải xuống và thực thi ở phía máy khách, điều này có thể có lợi cho các thiết bị có cấu hình thấp, vốn có thể gặp khó khăn khi xử lý các ứng dụng JavaScript nặng.
 
-## Tabs
-<Tabs>
-  <TabItem label="Stars">Sirius, Vega, Betelgeuse</TabItem>
-  <TabItem label="Moons">Io, Europa, Ganymede</TabItem>
-</Tabs>
+Khả năng truy cập tốt hơn: nội dung có sẵn ngay lập tức khi tải trang ban đầu, cải thiện khả năng truy cập cho người dùng sử dụng trình đọc màn hình hoặc các công nghệ hỗ trợ khác.
+
+Lưu trữ đệm dễ dàng hơn: các trang có thể được lưu trữ đệm ở phía máy chủ, điều này có thể cải thiện hiệu suất hơn nữa bằng cách giảm thời gian tạo và gửi nội dung đến máy khách.
+Nhìn chung, việc kết xuất phía máy chủ có thể mang lại trải nghiệm người dùng nhanh hơn và hiệu quả hơn, cũng như cải thiện khả năng truy cập và tối ưu hóa công cụ tìm kiếm.
+
+Vì Nuxt là một framework đa năng, nó cho phép bạn kết xuất tĩnh toàn bộ ứng dụng của mình lên một máy chủ lưu trữ tĩnh với nuxt generate, tắt SSR trên toàn cục với tùy chọn ssr: false hoặc tận dụng kết xuất kết hợp bằng cách thiết lập tùy chọn routeRules.
+
+➡️ Đọc thêm trong <a href="/guide/directory-structure/app/pages/"><span style="color: #00dc82">các chế độ kết xuất Nuxt</span></a>.
+
+### Công cụ máy chủ
+
+Công cụ máy chủ Nuxt Nitro mở khóa các khả năng mới của toàn bộ ngăn xếp.
+
+Trong quá trình phát triển, nó sử dụng Rollup và Node.js worker cho mã máy chủ và cách ly ngữ cảnh của bạn. Nó cũng tạo API máy chủ của bạn bằng cách đọc các tệp trong server/api/ và phần mềm trung gian máy chủ từ server/middleware/.
+
+Trong quá trình sản xuất, Nitro xây dựng ứng dụng và máy chủ của bạn thành một thư mục .output chung. Đầu ra này nhẹ: được thu nhỏ và loại bỏ khỏi bất kỳ mô-đun Node.js nào (trừ polyfill). Bạn có thể triển khai đầu ra này trên bất kỳ hệ thống nào hỗ trợ JavaScript, từ Node.js, Serverless, Workers, Edge-side rendering hoặc hoàn toàn tĩnh.
+
+➡️ Đọc thêm trong <a href="/guide/concepts/server-engine/"><span style="color: #00dc82">Nuxt server engine</span></a>.
+
+### Sẵn sàng cho môi trường production
+
+Ứng dụng Nuxt có thể được triển khai trên máy chủ Node hoặc Deno, được render sẵn để lưu trữ trong môi trường tĩnh hoặc được triển khai cho các nhà cung cấp serverless và edge.
+
+➡️ Đọc thêm trong phần <a href="/getting-started/deployment/"><span style="color: #00dc82">Triển khai</span></a>.
+
+### Mô-đun
+
+Hệ thống mô-đun cho phép bạn mở rộng Nuxt với các tính năng tùy chỉnh và tích hợp với các dịch vụ của bên thứ ba.
+
+➡️ Đọc thêm trong <a href="/guide/concepts/modules/"><span style="color: #00dc82">Nuxt Modules Concept</span></a>.
+
+### Kiến trúc
+
+Nuxt bao gồm các gói lõi khác nhau:
+
+- Công cụ lõi: nuxt
+- Các gói: @nuxt/vite-builder, @nuxt/rspack-builder và @nuxt/webpack-builder
+- Giao diện dòng lệnh: @nuxt/cli
+- Công cụ máy chủ: nitro
+- Bộ công cụ phát triển: @nuxt/kit
+
+Chúng tôi khuyên bạn nên đọc từng khái niệm để có cái nhìn toàn diện về khả năng của Nuxt và phạm vi của từng gói.
 
