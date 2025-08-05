@@ -1,0 +1,34 @@
+---
+title: Nuxt on the Edge
+description: assets
+---
+
+import { Card } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+> Tìm hiểu cách chúng tôi tạo ra Nuxt 3 có khả năng chạy trên thời gian chạy biên để chạy với kết xuất phía máy chủ gần với người dùng của bạn.
+>
+> [**Sébastien Chopin**](https://x.com/atinux)
+
+## Giới thiệu
+
+Vào tháng 9 năm 2017, Cloudflare đã giới thiệu Cloudflare Workers, cho phép chạy JavaScript trên mạng biên của họ. Điều này có nghĩa là mã của bạn sẽ được triển khai trên toàn bộ mạng biên tại hơn một trăm địa điểm trên toàn thế giới chỉ trong khoảng 30 giây.
+
+Công nghệ này cho phép bạn tập trung vào việc viết ứng dụng gần với người dùng, bất kể họ ở đâu trên thế giới (độ trễ ~50ms).
+
+Thời gian chạy của worker không giống như Node.js hoặc Trình duyệt, nó thực thi mã bằng V8, công cụ JavaScript do Google Chrome phát triển.
+
+Cho đến nay, những gì bạn có thể chạy trên nền tảng của họ là các tập lệnh nhỏ chạy ở rìa trước khi đến máy chủ của bạn để tăng hiệu suất hoặc thêm một số logic dựa trên tiêu đề yêu cầu chẳng hạn.
+
+Vào tháng 11 năm 2020, khi đang làm việc trên Nuxt 3, chúng tôi đã quyết định chạy Nuxt trong môi trường sản xuất trên các phiên bản biên/V8 riêng biệt.
+
+Nó mở khóa khả năng hiển thị trang web trên máy chủ trong khoảng 50ms từ khắp nơi trên thế giới khi sử dụng nền tảng như CloudFlare Workers, mà không cần phải xử lý máy chủ, bộ cân bằng tải và bộ nhớ đệm, với giá khoảng 0,3 đô la cho một triệu yêu cầu.
+
+As of today, new platforms are coming to let run apps on V8 isolates such as Deno Deploy.
