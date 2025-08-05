@@ -46,19 +46,19 @@ export default defineConfig({
             {
               label: "📂 Guide",
               items: [
-                {label: "Introduction", slug: "vue/guide/introduction"},
-                {label: "Quick Start", slug: "vue/guide/quick-start"},
+                { label: "Introduction", slug: "vue/guide/introduction" },
+                { label: "Quick Start", slug: "vue/guide/quick-start" },
                 {
                   label: "Essentials",
                   items: [
-                    {label: "Creating a Vue Application", slug: "vue/guide/essentials/application"},
-                    {label: "Template Syntax", slug: "vue/guide/essentials/template-syntax"},
+                    { label: "Creating a Vue Application", slug: "vue/guide/essentials/application" },
+                    { label: "Template Syntax", slug: "vue/guide/essentials/template-syntax" },
                   ],
                 },
                 {
                   label: "Extras",
                   items: [
-                    {label: "Web Components", slug: "vue/guide/extras/web-components"},
+                    { label: "Web Components", slug: "vue/guide/extras/web-components" },
                   ],
                 },
               ],
@@ -66,40 +66,14 @@ export default defineConfig({
             {
               label: "API",
               items: [
-                {label: "Application", slug: "vue/api/application"},
-                {label: "General", slug: "vue/api/general"},
-                {
-                  label: "Composition API",
-                  items: [
-                    {label: "Creating a Vue Application", slug: "vue/api/composition-api/setup"},
-                  ],
-                },
-                {
-                  label: "API",
-                  items: [
-
-                  ],
-                },
-                {
-                  label: "API",
-                  items: [
-                  ],
-                },
-                {
-                  label: "API",
-                  items: [
-                  ],
-                },
-                {
-                  label: "API",
-                  items: [
-                  ],
-                },
+                { label: "Application", slug: "vue/api/application" },
+                { label: "General", slug: "vue/api/general" },
+                { label: "Composition API Setup", slug: "vue/api/composition-api-setup" },
               ],
             },
-            {label: "Examples", slug: "vue/examples"},
-            {label: "Glossary", slug: "vue/glossary"},
-            {label: "Production Error Code Reference", slug: "vue/error-reference"},
+            { label: "Examples", slug: "vue/examples" },
+            { label: "Glossary", slug: "vue/glossary" },
+            { label: "Production Error Code Reference", slug: "vue/error-reference" },
           ],
         },
         {
