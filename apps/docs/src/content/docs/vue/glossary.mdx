@@ -85,7 +85,7 @@ Guide - Async Components
   A composable is a function.
   Composables are used to encapsulate and reuse stateful logic.
   The function name usually begins with use, so that other developers know it's a composable.
-  The function is typically expected to be called during the synchronous execution of a component's setup() function (or, equivalently, during the execution of a <script setup> block). This ties the invocation of the composable to the current component context, e.g. via calls to provide(), inject() or onMounted().
+  The function is typically expected to be called during the synchronous execution of a component's setup() function (or, equivalently, during the execution of a `<script setup>` block). This ties the invocation of the composable to the current component context, e.g. via calls to provide(), inject() or onMounted().
   Composables typically return a plain object, not a reactive object. This object usually contains refs and functions and is expected to be destructured within the calling code.
   As with many patterns, there can be some disagreement about whether specific code qualifies for the label. Not all JavaScript utility functions are composables. If a function doesn't use the Composition API then it probably isn't a composable. If it doesn't expect to be called during the synchronous execution of setup() then it probably isn't a composable. Composables are specifically used to encapsulate stateful logic, they are not just a naming convention for functions.
 
@@ -95,7 +95,7 @@ Guide - Async Components
 
   The Composition API is a collection of functions used to write components and composables in Vue.
 
-  The term is also used to describe one of the two main styles used to write components, the other being the Options API. Components written using the Composition API use either <script setup> or an explicit setup() function.
+  The term is also used to describe one of the two main styles used to write components, the other being the Options API. Components written using the Composition API use either `<script setup>` or an explicit setup() function.
 
   See the Composition API FAQ for more details.
 
@@ -160,7 +160,7 @@ Guide - Async Components
 
 ## functional component
 
-  A component definition is usually an object containing options. It may not appear that way if you're using <script setup>, but the component exported from the .vue file will still be an object.
+  A component definition is usually an object containing options. It may not appear that way if you're using `<script setup>`, but the component exported from the .vue file will still be an object.
 
   A functional component is an alternative form of component that is declared using a function instead. That function acts as the render function for the component.
 
@@ -234,7 +234,7 @@ Guide - Async Components
 
   Vue components are defined using objects. The properties of these component objects are known as options.
 
-  Components can be written in two styles. One style uses the Composition API in conjunction with setup (either via a setup() option or <script setup>). The other style makes very little direct use of the Composition API, instead using various component options to achieve a similar result. The component options that are used in this way are referred to as the Options API.
+  Components can be written in two styles. One style uses the Composition API in conjunction with setup (either via a setup() option or `<script setup>`). The other style makes very little direct use of the Composition API, instead using various component options to achieve a similar result. The component options that are used in this way are referred to as the Options API.
 
   The Options API includes options such as data(), computed, methods and created().
 
