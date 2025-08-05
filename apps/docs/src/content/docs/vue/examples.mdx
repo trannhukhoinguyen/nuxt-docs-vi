@@ -1,6 +1,6 @@
 ---
-title: Creating a Vue Application
-description: Creating a Vue Application
+title: Examples
+description: Examples
 ---
 
 import { Card } from '@astrojs/starlight/components';
@@ -13,4 +13,17 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+## Hello World
+
+```js
+<script setup>
+  import { ref } from 'vue'
+  
+  const message = ref('Hello World!')
+  </script>
+  
+  <template>
+    <h1>{{ message }}</h1>
+  </template>
+```
 

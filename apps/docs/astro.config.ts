@@ -56,53 +56,49 @@ export default defineConfig({
                   ],
                 },
                 {
-                  label: "API",
+                  label: "Extras",
                   items: [
-                    {label: "Application", slug: "vue/api/application"},
-                    {label: "General", slug: "vue/api/general"},
-                    {
-                      label: "Composition API",
-                      items: [
-                        {label: "Creating a Vue Application", slug: "vue/api/composition-api/setup"},
-                      ],
-                    },
-                    {
-                      label: "API",
-                      items: [
-
-                      ],
-                    },
-                    {
-                      label: "API",
-                      items: [
-                      ],
-                    },
-                    {
-                      label: "API",
-                      items: [
-                      ],
-                    },
-                    {
-                      label: "API",
-                      items: [
-                      ],
-                    },
-                  ],
-                },
-                {
-                  label: "Examples",
-                  items: [
-                    {label: "Creating a Vue Application", slug: "vue/guide/essentials/application"},
-                  ],
-                },
-                {
-                  label: "Glossary",
-                  items: [
-                    {label: "Creating a Vue Application", slug: "vue/guide/essentials/application"},
+                    {label: "Web Components", slug: "vue/guide/extras/web-components"},
                   ],
                 },
               ],
             },
+            {
+              label: "API",
+              items: [
+                {label: "Application", slug: "vue/api/application"},
+                {label: "General", slug: "vue/api/general"},
+                {
+                  label: "Composition API",
+                  items: [
+                    {label: "Creating a Vue Application", slug: "vue/api/composition-api/setup"},
+                  ],
+                },
+                {
+                  label: "API",
+                  items: [
+
+                  ],
+                },
+                {
+                  label: "API",
+                  items: [
+                  ],
+                },
+                {
+                  label: "API",
+                  items: [
+                  ],
+                },
+                {
+                  label: "API",
+                  items: [
+                  ],
+                },
+              ],
+            },
+            {label: "Examples", slug: "vue/examples"},
+            {label: "Glossary", slug: "vue/glossary"},
             {label: "Production Error Code Reference", slug: "vue/error-reference"},
           ],
         },
