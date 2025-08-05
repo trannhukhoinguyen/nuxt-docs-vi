@@ -13,4 +13,27 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+  <input type="text" id="searchInput" placeholder="Tìm kiếm..." onKeyUp="filterTable()">
 
+  <table id="myTable" border="1">
+    <thead>
+    <tr><th>Tên</th><th>Tuổi</th><th>Thành phố</th></tr>
+    </thead>
+    <tbody>
+    <tr><td>Nguyễn An</td><td>25</td><td>Hà Nội</td></tr>
+    <tr><td>Trần Bình</td><td>30</td><td>TP.HCM</td></tr>
+    <tr><td>Lê Cẩm</td><td>22</td><td>Đà Nẵng</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    const filterTable = () => {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const rows = document.querySelectorAll("#myTable tbody tr");
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(filter) ? "" : "none";
+      });
+    };
+  </script>

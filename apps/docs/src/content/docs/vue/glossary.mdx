@@ -53,11 +53,11 @@ Guide - Async Components
   For example, the following object would be a valid component:
 
   ```js
-  const HelloWorldComponent = {
-    render() {
-      return 'Hello world!'
+    const HelloWorldComponent = {
+      render() {
+        return 'Hello world!'
+      }
     }
-  }
   ```
 
   In practice, most Vue applications are written using Single-File Components (.vue files). While these components may not appear to be objects at first glance, the SFC compiler will convert them into an object, which is used as the default export for the file. From an external perspective, a .vue file is just an ES module that exports a component object.
@@ -125,7 +125,7 @@ Guide - Async Components
 
 ## dynamic component
 
-  The term dynamic component is used to describe cases where the choice of which child component to render needs to be made dynamically. Typically, this is achieved using <component :is="type">.
+  The term dynamic component is used to describe cases where the choice of which child component to render needs to be made dynamically. Typically, this is achieved using `<component :is="type">`.
 
   A dynamic component is not a special type of component. Any component can be used as a dynamic component. It is the choice of component that is dynamic, rather than the component itself.
 
