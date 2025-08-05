@@ -67,10 +67,11 @@ export default defineConfig({
               label: "API",
               items: [
                 { label: "Application", slug: "vue/api/application" },
-                { label: "General", slug: "vue/api/general" },
                 { label: "Composition API Setup", slug: "vue/api/composition-api-setup" },
+                { label: "General", slug: "vue/api/general" },
               ],
             },
+            { label: "API Reference", slug: "vue/api" },
             { label: "Examples", slug: "vue/examples" },
             { label: "Glossary", slug: "vue/glossary" },
             { label: "Production Error Code Reference", slug: "vue/error-reference" },
