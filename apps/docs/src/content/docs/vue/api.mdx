@@ -13,25 +13,44 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-  <input type="text" id="searchInput" placeholder="Tìm kiếm..." onKeyUp="filterTable()">
+  Tìm kiếm: <input type="text" id="searchInput" placeholder="Tên API..." onKeyUp="filterTable()" />
 
-  <table id="myTable" border="1">
-    <thead>
-    <tr><th>Tên</th><th>Tuổi</th><th>Thành phố</th></tr>
-    </thead>
-    <tbody>
-    <tr><td>Nguyễn An</td><td>25</td><td>Hà Nội</td></tr>
-    <tr><td>Trần Bình</td><td>30</td><td>TP.HCM</td></tr>
-    <tr><td>Lê Cẩm</td><td>22</td><td>Đà Nẵng</td></tr>
-    </tbody>
-  </table>
+  <h2>Global API</h2>
+  
+***
+
+  <h5 style="color: #42b883">Application</h5>
+
+  <ul style="list-style: none; color: #aac8e4">
+    <li>[createApp()](/vue/api#createapp)</li>
+    <li>[createSSRApp()](/vue/api#createssrapp)</li>
+    <li>[app.mount()](/vue/api#app-mount)</li>
+    <li>[app.unmount()](/vue/api#app-unmount)</li>
+    <li>[app.onUnmount()](/vue/api#app-onunmount)</li>
+    <li>[app.component()](/vue/api#app-component)</li>
+    <li>[app.directive()](/vue/api#app-directive)</li>
+    <li>[app.use()](/vue/api#app-use)</li>
+    <li>[app.mixin()](/vue/api#app-mixin)</li>
+    <li>[app.provide()](/vue/api#app-provide)</li>
+    <li>[app.runWithContext()](/vue/api#app-runwithcontext)</li>
+    <li>[app.version](/vue/api#app-version)</li>
+    <li>[app.config](/vue/api#app-config)</li>
+    <li>[app.config.errorHandler](/vue/api#app-config-errorhandler)</li>
+    <li>[app.config.warnHandler](/vue/api#app-config-warnhandler)</li>
+    <li>[app.config.performance](/vue/api#app-config-performance)</li>
+    <li>[app.config.compilerOptions](/vue/api#app-config-compileroptions)</li>
+    <li>[app.config.globalProperties](/vue/api#app-config-globalproperties)</li>
+    <li>[app.config.optionMergeStrategies](/vue/api#app-config-optionmergestrategies)</li>
+    <li>[app.config.idPrefix](/vue/api#app-config-idprefix)</li>
+    <li>[app.config.throwUnhandledErrorInProduction](/vue/api#app-config-throwunhandlederrorinproduction)</li>
+  </ul>
 
 {/*
   <script>
     const filterTable = () => {
       const input = document.getElementById("searchInput");
       const filter = input.value.toLowerCase();
-      const rows = document.querySelectorAll("#myTable tbody tr");
+      const rows = document.querySelectorAll("#apiTable tbody tr");
       rows.forEach(row => {
         const text = row.textContent.toLowerCase();
         row.style.display = text.includes(filter) ? "" : "none";
