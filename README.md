@@ -1,10 +1,5 @@
 **Tài liệu Hướng dẫn Chính thức bằng Tiếng Việt**
 
-<a href="https://nuxt-vue-docs-vi.vercel.app/vue/guide/introduction" target="_blank">
-    <h3 style="color: #00dc82; font-weight: bold">VUE Js</h3>
-</a>
+## [VUE Js](https://nuxt-vue-docs-vi.vercel.app/vue/guide/introduction)
 
-
-<a href="https://nuxt-vue-docs-vi.vercel.app/nuxt/get_started/introduction" target="_blank">
-    <h3 style="color: #00dc82; font-weight: bold">NUXT Js</h3>
-</a>
+## [NUXT Js](https://nuxt-vue-docs-vi.vercel.app/nuxt/get_started/introduction)
