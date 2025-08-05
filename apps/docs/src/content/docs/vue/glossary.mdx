@@ -13,21 +13,23 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
-Bảng thuật ngữ này nhằm mục đích cung cấp một số hướng dẫn về ý nghĩa của các thuật ngữ kỹ thuật thường được sử dụng khi nói về Vue. 
-
-Bảng thuật ngữ này nhằm mục đích mô tả cách các thuật ngữ thường được sử dụng, chứ không phải là một quy định bắt buộc về cách sử dụng chúng. 
-
-Một số thuật ngữ có thể có ý nghĩa hoặc sắc thái hơi khác nhau tùy thuộc vào ngữ cảnh xung quanh.
-
-## async component
-
-An async component is a wrapper around another component that allows for the wrapped component to be lazy loaded. This is typically used as a way to reduce the size of the built .js files, allowing them to be split into smaller chunks that are loaded only when required.
-
-Vue Router has a similar feature for the lazy loading of route components, though this does not use Vue's async components feature.
-
-For more details see:
-
-Guide - Async Components
+  Bảng thuật ngữ này nhằm mục đích cung cấp một số hướng dẫn về ý nghĩa của các thuật ngữ kỹ thuật thường được sử dụng khi nói về Vue. 
+  
+  Bảng thuật ngữ này nhằm mục đích mô tả cách các thuật ngữ thường được sử dụng, chứ không phải là một quy định bắt buộc về cách sử dụng chúng. 
+  
+  Một số thuật ngữ có thể có ý nghĩa hoặc sắc thái hơi khác nhau tùy thuộc vào ngữ cảnh xung quanh.
+  
+  ## async component
+  
+  An async component is a wrapper around another component that allows for the wrapped component to be lazy loaded. 
+  
+  This is typically used as a way to reduce the size of the built <Badge text=".js" variant="note" /> files, allowing them to be split into smaller chunks that are loaded only when required.
+  
+  Vue Router has a similar feature for the lazy loading of route components, though this does not use Vue's async components feature.
+  
+  For more details see:
+  
+  - Guide - Async Components
 
 ## compiler macro
 
@@ -39,8 +41,8 @@ Guide - Async Components
   
   For more details see:
 
-  <a href="/vue/api/sfc-script-setup#defineprops-defineemits" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineProps() & defineEmits()</span></a>
-  <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineExpose()</span></a>
+  - <a href="/vue/api/sfc-script-setup#defineprops-defineemits" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineProps() & defineEmits()</span></a>
+  - <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineExpose()</span></a>
 
 ## component
 
@@ -70,13 +72,14 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Component Basics
+  - Guide - Component Basics
+  
   The word 'component' also features in several other terms:
 
-  async component
-  dynamic component
-  functional component
-  Web Component
+  - async component
+  - dynamic component
+  - functional component
+  - Web Component
 
 ## composable
 
@@ -109,7 +112,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Vue and Web Components
+  - Guide - Vue and Web Components
 
 ## directive
   The term directive refers to template attributes beginning with the v- prefix, or their equivalent shorthands.
@@ -131,7 +134,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Components Basics - Dynamic Components
+  - Guide - Components Basics - Dynamic Components
 
 ## effect
 
@@ -143,8 +146,8 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Event Handling
-  Guide - Component Events
+  - Guide - Event Handling
+  - Guide - Component Events
 
 ## fragment
 
@@ -154,7 +157,9 @@ Guide - Async Components
 
   Fragments are used to support components with multiple root nodes. While such components might appear to have multiple roots, behind the scenes they use a fragment node as a single root, as a parent of the 'root' nodes.
 
-  Fragments are also used by the template compiler as a way to wrap multiple dynamic nodes, e.g. those created via v-for or v-if. This allows for extra hints to be passed to the VDOM patching algorithm. Much of this is handled internally, but one place you may encounter this directly is using a key on a <template> tag with v-for. In that scenario, the key is added as a prop to the fragment VNode.
+  Fragments are also used by the template compiler as a way to wrap multiple dynamic nodes, e.g. those created via v-for or v-if. This allows for extra hints to be passed to the VDOM patching algorithm. Much of this is handled internally, but one place you may encounter this directly is using a key on a `<template>` tag with v-for. 
+  
+  In that scenario, the key is added as a prop to the fragment VNode.
 
   Fragment nodes are currently rendered to the DOM as empty text nodes, though that is an implementation detail. You may encounter those text nodes if you use $el or attempt to walk the DOM with built-in browser APIs.
 
@@ -168,7 +173,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Render Functions & JSX - Functional Components
+  - Guide - Render Functions & JSX - Functional Components
 
 ## hoisting
 
@@ -186,7 +191,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Rendering Mechanism - Cache Static
+  - Guide - Rendering Mechanism - Cache Static
 
 ## in-DOM template
 
@@ -198,9 +203,9 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Creating an Application - In-DOM Root Component Template
-  Guide - Component Basics - in-DOM Template Parsing Caveats
-  Options: Rendering - template
+  - Guide - Creating an Application - In-DOM Root Component Template
+  - Guide - Component Basics - in-DOM Template Parsing Caveats
+  - Options: Rendering - template
 
 ## inject
 
@@ -216,7 +221,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Lifecycle Hooks
+  - Guide - Lifecycle Hooks
 
 ## macro
 
@@ -228,7 +233,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Slots - Named Slots
+  - Guide - Slots - Named Slots
 
 ## Options API
 
@@ -250,16 +255,15 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Plugins
+  - Guide - Plugins
 
 ## prop
 
   There are three common uses of the term prop in Vue:
 
-  Component props
-  VNode props
-
-## Slot props
+  - Component props
+  - VNode props
+  - Slot props
 
   Component props are what most people think of as props. These are explicitly defined by a component using either defineProps() or the props option.
 
@@ -273,9 +277,9 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Props
-  Guide - Render Functions & JSX
-  Guide - Slots - Scoped Slots
+  - Guide - Props
+  - Guide - Render Functions & JSX
+  - Guide - Slots - Scoped Slots
 
 ## provide / inject
 
@@ -289,7 +293,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - provide / inject
+  - Guide - provide / inject
 
 ## reactive effect
 
@@ -303,7 +307,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Reactivity in Depth
+  - Guide - Reactivity in Depth
 
 ## reactivity
 
@@ -317,8 +321,8 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Reactivity Fundamentals
-  Guide - Reactivity in Depth
+  - Guide - Reactivity Fundamentals
+  - Guide - Reactivity in Depth
 
 ## Reactivity API
 
@@ -328,9 +332,9 @@ Guide - Async Components
 
   For more details see:
 
-  Reactivity API: Core
-  Reactivity API: Utilities
-  Reactivity API: Advanced
+  - Reactivity API: Core
+  - Reactivity API: Utilities
+  - Reactivity API: Advanced
 
 ## ref
 
@@ -342,10 +346,10 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Reactivity Fundamentals
-  Reactivity API: Core
-  Reactivity API: Utilities
-  Reactivity API: Advanced
+  - Guide - Reactivity Fundamentals
+  - Reactivity API: Core
+  - Reactivity API: Utilities
+  - Reactivity API: Advanced
 
 ## render function
 
@@ -353,7 +357,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Render Functions & JSX
+  - Guide - Render Functions & JSX
 
 ## scheduler
 
@@ -377,8 +381,10 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Slots - Scoped Slots
-  SFC
+  - Guide - Slots - Scoped Slots
+
+## SFC
+
   See Single-File Component.
 
 ## side effect
@@ -397,8 +403,8 @@ Guide - Async Components
 
   See also:
 
-  Guide - Single-File Components
-  SFC Syntax Specification
+  - Guide - Single-File Components
+  - SFC Syntax Specification
 
 ## slot
 
@@ -406,7 +412,7 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Slots
+  - Guide - Slots
   
 ## template ref
 
@@ -420,8 +426,10 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Template Refs
-  VDOM
+  - Guide - Template Refs
+  
+## VDOM
+
   See virtual DOM.
 
 ## virtual DOM
@@ -440,8 +448,8 @@ Guide - Async Components
 
   For more details see:
 
-  Guide - Rendering Mechanism
-  Guide - Render Functions & JSX
+  - Guide - Rendering Mechanism
+  - Guide - Render Functions & JSX
 
 ## VNode
 
