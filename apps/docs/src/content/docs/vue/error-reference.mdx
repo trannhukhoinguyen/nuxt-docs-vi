@@ -1,0 +1,59 @@
+---
+title: Mã lỗi sản xuất tham chiếu
+description: Mã lỗi sản xuất tham chiếu
+---
+
+import { Card } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+import { Aside } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+import { FileTree } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+import { LinkButton } from '@astrojs/starlight/components';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+## Lỗi thời gian chạy
+
+Trong bản dựng sản xuất, đối số thứ 3 được truyền cho các API xử lý lỗi sau sẽ là một mã ngắn thay vì chuỗi thông tin đầy đủ:
+
+- <Badge text="app.config.errorHandler" variant="success" />
+- <Badge text="onErrorCaptured" variant="success" /> (Composition API)
+- <Badge text="errorCaptured" variant="success" /> (Options API)
+
+Bảng sau đây ánh xạ các mã thành chuỗi thông tin đầy đủ ban đầu của chúng:
+
+| Code | Message                      |
+|----------|--------------------------------|
+| **0**    | _setup function_               |
+| **1**    | _render function_              |
+| **2**    | _watcher getter_               |
+| **3**    | _watcher callback_             |
+| **4**    | _watcher cleanup function_     |
+| **5**    | _native event handler_         |
+| **6**    | _component event handler_      |
+| **7**    | _vnode hook_                   |
+| **8**    | _directive hook_               |
+| **9**    | _transition hook_              |
+| **10**   | _app errorHandler_             |
+| **11**   | _app warnHandler_              |
+| **12**   | _ref function_                 |
+| **13**   | _async component loader_       |
+| **14**   | _scheduler flush_              |
+| **15**   | _component update_             |
+| **16**   | _app unmount cleanup function_ |
+| **sp**   | _serverPrefetch hook_          |
+| **bc**   | _beforeCreate hook_            |
+| **c**    | _created hook_                 |
+| **bm**   | _beforeMount hook_             |
+| **m**    | _mounted hook_                 |
+| **bu**   | _beforeUpdate hook_            |
+| **u**    | _updated_                      |
+| **bum**  | _beforeUnmount hook_           |
+| **um**   | _unmounted hook_               |
+| **a**    | _activated hook_               |
+| **da**   | _deactivated hook_             |
+| **ec**   | _errorCaptured hook_           |
+| **rtc**  | _renderTracked hook_           |
+| **rtg**  | _renderTriggered hook_         |
+

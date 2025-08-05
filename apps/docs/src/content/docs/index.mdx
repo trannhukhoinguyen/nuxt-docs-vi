@@ -1,34 +1,29 @@
 ---
-title: Nuxt
-description: Nuxt js
+title: Nuxt & Vue
+description: Tài liệu Nuxt & Vue bằng Tiếng Việt
 template: splash
 hero:
-  tagline: Nuxt js
+  tagline: Tài liệu Nuxt & Vue bằng Tiếng Việt
   image:
     file: ../../assets/logo.png
   actions:
-    - text: Introduction
-      link: get_started/introduction
+    - text: Nuxt
+      link: /nuxt/get_started/introduction
       icon: right-arrow
-    - text: Installation
-      link: get_started/installation
+      variant: secondary
+    - text: Vue
+      link: /vue/guide/introduction
       icon: right-arrow
-      variant: minimal
+      variant: primary
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+	<Card title="Nuxt" icon="puzzle">
+    Xem thêm tại [Nuxt](nuxt/get_started/introduction).
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Vue" icon="puzzle">
+    Xem thêm tại [Vue](vue/guide/introduction).
 	</Card>
 </CardGrid>
