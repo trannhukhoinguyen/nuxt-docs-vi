@@ -12,7 +12,7 @@ export default defineConfig({
       imports: [
         // Đường dẫn từ 1 package (không cần @components/... nội bộ)
         {
-          from: "@astrojs/starlight/components",
+          from: "@catppuccin/starlight/components",
           names: [
             "Card",
             "LinkCard",
