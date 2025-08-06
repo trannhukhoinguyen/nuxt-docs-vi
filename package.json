@@ -9,5 +9,8 @@
   "devDependencies": {
     "concurrently": "^9.0.1"
   },
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {
+    "astro-auto-import": "^0.4.4"
+  }
 }

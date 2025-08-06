@@ -3,16 +3,6 @@ title: Creating a Vue Application
 description: Creating a Vue Application
 ---
 
-import { Card } from '@astrojs/starlight/components';
-import { LinkCard } from '@astrojs/starlight/components';
-import { Aside } from '@astrojs/starlight/components';
-import { Badge } from '@astrojs/starlight/components';
-import { Code } from '@astrojs/starlight/components';
-import { FileTree } from '@astrojs/starlight/components';
-import { Icon } from '@astrojs/starlight/components';
-import { LinkButton } from '@astrojs/starlight/components';
-import { Tabs, TabItem } from '@astrojs/starlight/components';
-
   Bảng thuật ngữ này nhằm mục đích cung cấp một số hướng dẫn về ý nghĩa của các thuật ngữ kỹ thuật thường được sử dụng khi nói về Vue. 
   
   Bảng thuật ngữ này nhằm mục đích mô tả cách các thuật ngữ thường được sử dụng, chứ không phải là một quy định bắt buộc về cách sử dụng chúng. 
@@ -35,9 +25,17 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
   A compiler macro is special code that is processed by a compiler and converted into something else. They are effectively a clever form of string replacement.
   
-  Vue's SFC compiler supports various macros, such as defineProps(), defineEmits() and defineExpose(). These macros are intentionally designed to look like normal JavaScript functions so that they can leverage the same parser and type inference tooling around JavaScript / TypeScript. However, they are not actual functions that are run in the browser. These are special strings that the compiler detects and replaces with the real JavaScript code that will actually be run.
+  Vue's SFC compiler supports various macros, such as defineProps(), defineEmits() and defineExpose(). 
   
-  Macros have limitations on their use that don't apply to normal JavaScript code. For example, you might think that const dp = defineProps would allow you to create an alias for defineProps, but it'll actually result in an error. There are also limitations on what values can be passed to defineProps(), as the 'arguments' have to be processed by the compiler and not at runtime.
+  These macros are intentionally designed to look like normal JavaScript functions so that they can leverage the same parser and type inference tooling around JavaScript / TypeScript. 
+
+  However, they are not actual functions that are run in the browser. These are special strings that the compiler detects and replaces with the real JavaScript code that will actually be run.
+  
+  Macros have limitations on their use that don't apply to normal JavaScript code. 
+  
+  For example, you might think that const dp = defineProps would allow you to create an alias for defineProps, but it'll actually result in an error. 
+  
+There are also limitations on what values can be passed to defineProps(), as the 'arguments' have to be processed by the compiler and not at runtime.
   
   For more details see:
 
@@ -62,7 +60,9 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     }
   ```
 
-  In practice, most Vue applications are written using Single-File Components (.vue files). While these components may not appear to be objects at first glance, the SFC compiler will convert them into an object, which is used as the default export for the file. From an external perspective, a .vue file is just an ES module that exports a component object.
+  In practice, most Vue applications are written using Single-File Components (.vue files). 
+  
+  While these components may not appear to be objects at first glance, the SFC compiler will convert them into an object, which is used as the default export for the file. From an external perspective, a .vue file is just an ES module that exports a component object.
 
   The properties of a component object are usually referred to as options. This is where the Options API gets its name.
 
@@ -440,11 +440,15 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
   Manipulating the DOM is a major performance bottleneck. The virtual DOM provides one strategy for managing that.
 
-  Rather than creating DOM nodes directly, Vue components generate a description of what DOM nodes they would like. These descriptors are plain JavaScript objects, known as VNodes (virtual DOM nodes). Creating VNodes is relatively cheap.
+  Rather than creating DOM nodes directly, Vue components generate a description of what DOM nodes they would like. 
+  
+  These descriptors are plain JavaScript objects, known as VNodes (virtual DOM nodes). Creating VNodes is relatively cheap.
 
   Every time a component re-renders, the new tree of VNodes is compared to the previous tree of VNodes and any differences are then applied to the real DOM. If nothing has changed then the DOM doesn't need to be touched.
 
-  Vue uses a hybrid approach that we call Compiler-Informed Virtual DOM. Vue's template compiler is able to apply performance optimizations based on static analysis of the template. Rather than performing a full comparison of a component's old and new VNode trees at runtime, Vue can use information extracted by the compiler to reduce the comparison to just the parts of the tree that can actually change.
+  Vue uses a hybrid approach that we call Compiler-Informed Virtual DOM. Vue's template compiler is able to apply performance optimizations based on static analysis of the template. 
+  
+  Rather than performing a full comparison of a component's old and new VNode trees at runtime, Vue can use information extracted by the compiler to reduce the comparison to just the parts of the tree that can actually change.
 
   For more details see:
 
@@ -461,7 +465,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
   Tiêu chuẩn Web Components là tập hợp các tính năng được triển khai trong các trình duyệt web hiện đại. 
   
-  Các thành phần Vue không phải là Web Components, nhưng defineCustomElement() có thể được sử dụng để tạo một <a href="/vue/glossary#custom-element" target="_blank"><span style="color: #00dc82">phần tử tùy chỉnh</span></a> từ một thành phần Vue. 
+  Các thành phần Vue không phải là Web Components, nhưng defineCustomElement() có thể được sử dụng để tạo một <a href="/vue/glossary#custom-element"><span style="color: #00dc82">phần tử tùy chỉnh</span></a> từ một thành phần Vue. 
   
   Vue cũng hỗ trợ việc sử dụng các phần tử tùy chỉnh bên trong các thành phần Vue.
 

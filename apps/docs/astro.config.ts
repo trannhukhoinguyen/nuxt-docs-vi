@@ -1,11 +1,33 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import catppuccin from "@catppuccin/starlight";
+import AutoImport from "astro-auto-import";
 
 // https://astro.build/config
 export default defineConfig({
 	site: "https://starlight.catppuccin.com",
 	integrations: [
+    AutoImport({
+      // 👇 Tự động import các component vào Markdown
+      imports: [
+        // Đường dẫn từ 1 package (không cần @components/... nội bộ)
+        {
+          from: "@astrojs/starlight/components",
+          names: [
+            "Card",
+            "LinkCard",
+            "Aside",
+            "Badge",
+            "Code",
+            "FileTree",
+            "Icon",
+            "LinkButton",
+            "Tabs",
+            "TabItem",
+          ],
+        },
+      ],
+    }),
 		starlight({
 			title: "Nuxt & Vue",
 			logo: {
