@@ -20,34 +20,36 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
   Một số thuật ngữ có thể có ý nghĩa hoặc sắc thái hơi khác nhau tùy thuộc vào ngữ cảnh xung quanh.
   
   ## async component
+
+  Thành phần bất đồng bộ là một lớp bao bọc xung quanh một thành phần khác, cho phép thành phần được bao bọc này được tải lười biếng.
+    
+  Điều này thường được sử dụng như một cách để giảm kích thước của các tệp <Badge text=".js" variant="note" /> đã xây dựng, cho phép chúng được chia thành các phần nhỏ hơn và chỉ được tải khi cần thiết.
   
-  An async component is a wrapper around another component that allows for the wrapped component to be lazy loaded. 
+  Vue Router có một tính năng tương tự để <a href="/guide/advanced/async" target="_blank"><span style="color: #00dc82">tải lười biếng các thành phần tuyến đường</span></a>, mặc dù tính năng này không sử dụng tính năng thành phần bất đồng bộ của Vue.
+
+  Xem thêm tại:
   
-  This is typically used as a way to reduce the size of the built <Badge text=".js" variant="note" /> files, allowing them to be split into smaller chunks that are loaded only when required.
-  
-  Vue Router has a similar feature for the lazy loading of route components, though this does not use Vue's async components feature.
-  
-  For more details see:
-  
-  - Guide - Async Components
+  - <a href="/guide/components/async" target="_blank"><span style="color: #00dc82">Guide - Async Components</span></a>
 
 ## compiler macro
 
-  A compiler macro is special code that is processed by a compiler and converted into something else. They are effectively a clever form of string replacement.
+  A compiler macro is special code that is processed by a compiler and converted into something else. 
+  They are effectively a clever form of string replacement.
   
-  Vue's SFC compiler supports various macros, such as defineProps(), defineEmits() and defineExpose(). 
+  Vue's <a href="/vue/glossary#single-file-component" target="_blank"><span style="color: #00dc82">SFC</span></a> compiler supports various macros, such as defineProps(), defineEmits() and defineExpose(). 
   
   These macros are intentionally designed to look like normal JavaScript functions so that they can leverage the same parser and type inference tooling around JavaScript / TypeScript. 
 
-  However, they are not actual functions that are run in the browser. These are special strings that the compiler detects and replaces with the real JavaScript code that will actually be run.
+  However, they are not actual functions that are run in the browser. 
+  These are special strings that the compiler detects and replaces with the real JavaScript code that will actually be run.
   
   Macros have limitations on their use that don't apply to normal JavaScript code. 
   
   For example, you might think that const dp = defineProps would allow you to create an alias for defineProps, but it'll actually result in an error. 
   
-There are also limitations on what values can be passed to defineProps(), as the 'arguments' have to be processed by the compiler and not at runtime.
+  There are also limitations on what values can be passed to defineProps(), as the 'arguments' have to be processed by the compiler and not at runtime.
   
-  For more details see:
+  Xem thêm tại:
 
   - <a href="/vue/api/sfc-script-setup#defineprops-defineemits" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineProps() & defineEmits()</span></a>
   - <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineExpose()</span></a>
@@ -74,22 +76,22 @@ There are also limitations on what values can be passed to defineProps(), as the
   
   While these components may not appear to be objects at first glance, the SFC compiler will convert them into an object, which is used as the default export for the file. From an external perspective, a .vue file is just an ES module that exports a component object.
 
-  The properties of a component object are usually referred to as options. This is where the Options API gets its name.
+  The properties of a component object are usually referred to as options. This is where the <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">Options API gets its name</span></a>.
 
   The options for a component define how instances of that component should be created. Components are conceptually similar to classes, though Vue doesn't use actual JavaScript classes to define them.
 
   The term component can also be used more loosely to refer to component instances.
 
-  For more details see:
+  Xem thêm tại:
 
-  - Guide - Component Basics
+  - <a href="/vue/api/sfc-script-setup#define-expose" target="_blank"><span style="color: #00dc82">Guide - Component Basics</span></a>
   
   The word 'component' also features in several other terms:
 
-  - async component
-  - dynamic component
-  - functional component
-  - Web Component
+  - <a href="/vue/glossary#async-component" target="_blank"><span style="color: #00dc82">async component</span></a>
+  - <a href="/vue/glossary#dynamic-component" target="_blank"><span style="color: #00dc82">dynamic component</span></a>
+  - <a href="/vue/glossary#functional-component" target="_blank"><span style="color: #00dc82">functional component</span></a>
+  - <a href="/vue/glossary#web-component" target="_blank"><span style="color: #00dc82">Web Component</span></a>
 
 ## composable
 
@@ -120,7 +122,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Custom elements should not be confused with the ability to include Vue components as tags within another Vue component's template. Custom elements are used to create Web Components, not Vue components.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Vue and Web Components
 
@@ -131,7 +133,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Vue also supports creating custom directives, though they are typically only used as an 'escape hatch' for manipulating DOM nodes directly. Custom directives generally can't be used to recreate the functionality of the built-in directives.
 
-  For more details see:
+  Xem thêm tại:
 
   Guide - Template Syntax - Directives
   Guide - Custom Directives
@@ -142,7 +144,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   A dynamic component is not a special type of component. Any component can be used as a dynamic component. It is the choice of component that is dynamic, rather than the component itself.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Components Basics - Dynamic Components
 
@@ -154,7 +156,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   The use of events for communicating between different parts of a program is common to many different areas of programming. Within Vue, the term is commonly applied to both native HTML element events and Vue component events. The v-on directive is used in templates to listen for both types of event.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Event Handling
   - Guide - Component Events
@@ -181,7 +183,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   A functional component cannot have any state of its own. It also doesn't go through the usual component lifecycle, so lifecycle hooks can't be used. This makes them slightly lighter than normal, stateful components.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Render Functions & JSX - Functional Components
 
@@ -199,7 +201,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   The Vue template compiler identifies those static VNodes, caches them during the initial render, and reuses the same VNodes for every subsequent re-render.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Rendering Mechanism - Cache Static
 
@@ -211,7 +213,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Typically, an in-DOM template starts off as HTML markup written directly in the HTML of the page. The browser then parses this into DOM nodes, which Vue then uses to read off the innerHTML.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Creating an Application - In-DOM Root Component Template
   - Guide - Component Basics - in-DOM Template Parsing Caveats
@@ -229,7 +231,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   With the Options API, each hook is provided as a separate option, e.g. mounted. The Composition API uses functions instead, such as onMounted().
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Lifecycle Hooks
 
@@ -241,7 +243,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   A component can have multiple slots, differentiated by name. Slots other than the default slot are referred to as named slots.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Slots - Named Slots
 
@@ -263,7 +265,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Plugins are added to an application by calling app.use(plugin). The plugin itself is either a function or an object with an install function. That function will be passed the application instance and can then do whatever it needs to do.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Plugins
 
@@ -285,7 +287,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   While the word props is derived from the word properties, the term props has a much more specific meaning in the context of Vue. You should avoid using it as an abbreviation of properties.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Props
   - Guide - Render Functions & JSX
@@ -301,7 +303,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   provide can also be used at the application level, making a value available to all components within that application.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - provide / inject
 
@@ -315,7 +317,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   The term is derived from 'side effect'. Calling the effect function is a side effect of the property value being changed.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Reactivity in Depth
 
@@ -329,7 +331,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Instead, Vue's reactivity system tracks property access at runtime. It does this using both Proxy wrappers and getter/setter functions for properties.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Reactivity Fundamentals
   - Guide - Reactivity in Depth
@@ -340,7 +342,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   The Reactivity API is a subset of the Composition API.
 
-  For more details see:
+  Xem thêm tại:
 
   - Reactivity API: Core
   - Reactivity API: Utilities
@@ -354,7 +356,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   There are various different types of ref. For example, refs can be created using ref(), shallowRef(), computed(), and customRef(). The function isRef() can be used to check whether an object is a ref, and isReadonly() can be used to check whether the ref allows the direct reassignment of its value.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Reactivity Fundamentals
   - Reactivity API: Core
@@ -365,7 +367,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   A render function is the part of a component that generates the VNodes used during rendering. Templates are compiled down into render functions.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Render Functions & JSX
 
@@ -389,7 +391,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   The props passed to a slot can only be used within a specific region of the parent template, responsible for defining the slot's contents. This region of the template behaves as a variable scope for the props, hence the name 'scoped slot'.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Slots - Scoped Slots
 
@@ -420,7 +422,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Slots are used to pass content to child components. Whereas props are used to pass data values, slots are used to pass richer content consisting of HTML elements and other Vue components.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Slots
   
@@ -434,7 +436,7 @@ There are also limitations on what values can be passed to defineProps(), as the
 
   Template refs should not be confused with the reactive refs found in Vue's reactivity system.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Template Refs
   
@@ -460,7 +462,7 @@ There are also limitations on what values can be passed to defineProps(), as the
   
   Rather than performing a full comparison of a component's old and new VNode trees at runtime, Vue can use information extracted by the compiler to reduce the comparison to just the parts of the tree that can actually change.
 
-  For more details see:
+  Xem thêm tại:
 
   - Guide - Rendering Mechanism
   - Guide - Render Functions & JSX

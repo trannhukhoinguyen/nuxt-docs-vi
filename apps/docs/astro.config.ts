@@ -63,43 +63,6 @@ export default defineConfig({
 			],
 			sidebar: [
         {
-          label: "✨ Vue",
-          items: [
-            {
-              label: "📂 Guide",
-              items: [
-                { label: "Introduction", slug: "vue/guide/introduction" },
-                { label: "Quick Start", slug: "vue/guide/quick-start" },
-                {
-                  label: "Essentials",
-                  items: [
-                    { label: "Creating a Vue Application", slug: "vue/guide/essentials/application" },
-                    { label: "Template Syntax", slug: "vue/guide/essentials/template-syntax" },
-                  ],
-                },
-                {
-                  label: "Extras",
-                  items: [
-                    { label: "Web Components", slug: "vue/guide/extras/web-components" },
-                  ],
-                },
-              ],
-            },
-            {
-              label: "API",
-              items: [
-                { label: "Application", slug: "vue/api/application" },
-                { label: "Composition API Setup", slug: "vue/api/composition-api-setup" },
-                { label: "General", slug: "vue/api/general" },
-              ],
-            },
-            { label: "API Reference", slug: "vue/api" },
-            { label: "Examples", slug: "vue/examples" },
-            { label: "Glossary", slug: "vue/glossary" },
-            { label: "Production Error Code Reference", slug: "vue/error-reference" },
-          ],
-        },
-        {
           label: "✨ Nuxt",
           items: [
             {
@@ -812,6 +775,43 @@ export default defineConfig({
                 { label: "Nuxt on the Edge", slug: "nuxt/blog/nuxt-on-the-edge" },
               ],
             },
+          ],
+        },
+        {
+          label: "✨ Vue",
+          items: [
+            {
+              label: "📂 Guide",
+              items: [
+                { label: "Introduction", slug: "vue/guide/introduction" },
+                { label: "Quick Start", slug: "vue/guide/quick-start" },
+                {
+                  label: "Essentials",
+                  items: [
+                    { label: "Creating a Vue Application", slug: "vue/guide/essentials/application" },
+                    { label: "Template Syntax", slug: "vue/guide/essentials/template-syntax" },
+                  ],
+                },
+                {
+                  label: "Extras",
+                  items: [
+                    { label: "Web Components", slug: "vue/guide/extras/web-components" },
+                  ],
+                },
+              ],
+            },
+            {
+              label: "API",
+              items: [
+                { label: "Application", slug: "vue/api/application" },
+                { label: "Composition API Setup", slug: "vue/api/composition-api-setup" },
+                { label: "General", slug: "vue/api/general" },
+              ],
+            },
+            { label: "API Reference", slug: "vue/api" },
+            { label: "Examples", slug: "vue/examples" },
+            { label: "Glossary", slug: "vue/glossary" },
+            { label: "Production Error Code Reference", slug: "vue/error-reference" },
           ],
         },
 			],
