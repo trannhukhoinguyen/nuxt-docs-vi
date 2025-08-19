@@ -25,7 +25,7 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     
   Điều này thường được sử dụng như một cách để giảm kích thước của các tệp <Badge text=".js" variant="note" /> đã xây dựng, cho phép chúng được chia thành các phần nhỏ hơn và chỉ được tải khi cần thiết.
   
-  Vue Router có một tính năng tương tự để <a href="/guide/advanced/async" target="_blank"><span style="color: #00dc82">tải lười biếng các thành phần tuyến đường</span></a>, mặc dù tính năng này không sử dụng tính năng thành phần bất đồng bộ của Vue.
+  Vue Router có một tính năng tương tự để <a href="/guide/advanced/lazy-loading" target="_blank"><span style="color: #00dc82">tải lười biếng các thành phần tuyến đường</span></a>, mặc dù tính năng này không sử dụng tính năng thành phần bất đồng bộ của Vue.
 
   Xem thêm tại:
   
@@ -33,36 +33,31 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
 ## compiler macro
 
-  A compiler macro is special code that is processed by a compiler and converted into something else. 
-  They are effectively a clever form of string replacement.
-  
-  Vue's <a href="/vue/glossary#single-file-component" target="_blank"><span style="color: #00dc82">SFC</span></a> compiler supports various macros, such as defineProps(), defineEmits() and defineExpose(). 
-  
-  These macros are intentionally designed to look like normal JavaScript functions so that they can leverage the same parser and type inference tooling around JavaScript / TypeScript. 
+  Macro biên dịch là mã đặc biệt được trình biên dịch xử lý và chuyển đổi thành thứ khác.
+  Chúng thực sự là một dạng thay thế chuỗi thông minh.
 
-  However, they are not actual functions that are run in the browser. 
-  These are special strings that the compiler detects and replaces with the real JavaScript code that will actually be run.
-  
-  Macros have limitations on their use that don't apply to normal JavaScript code. 
-  
-  For example, you might think that const dp = defineProps would allow you to create an alias for defineProps, but it'll actually result in an error. 
-  
-  There are also limitations on what values can be passed to defineProps(), as the 'arguments' have to be processed by the compiler and not at runtime.
-  
+  Trình biên dịch <a href="/vue/glossary/#single-file-component" target="_blank"><span style="color: #00dc82">SFC</span></a> của Vue hỗ trợ nhiều macro khác nhau, chẳng hạn như <Badge text="defineProps()" variant="note" />, <Badge text="defineEmits()" variant="note" /> và <Badge text="defineExpose()" variant="note" />. 
+  Các macro này được thiết kế có chủ đích để trông giống như các hàm JavaScript thông thường, nhằm tận dụng cùng một trình phân tích cú pháp và công cụ suy luận kiểu dữ liệu xung quanh JavaScript/TypeScript. 
+  Tuy nhiên, chúng không phải là các hàm thực sự được chạy trên trình duyệt. 
+  Chúng là những chuỗi ký tự đặc biệt mà trình biên dịch sẽ phát hiện và thay thế bằng mã JavaScript thực sự sẽ được chạy.
+
+  Macro có những hạn chế về cách sử dụng mà không áp dụng cho mã JavaScript thông thường. Ví dụ, bạn có thể nghĩ rằng <Badge text="const dp = defineProps" variant="note" /> sẽ cho phép bạn tạo một bí danh cho defineProps, nhưng thực tế nó sẽ gây ra lỗi. 
+  Cũng có những hạn chế về giá trị có thể được truyền vào <Badge text="defineProps()" variant="note" />, vì 'đối số' phải được trình biên dịch xử lý chứ không phải trong thời gian chạy.
+    
   Xem thêm tại:
 
-  - <a href="/vue/api/sfc-script-setup#defineprops-defineemits" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineProps() & defineEmits()</span></a>
-  - <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineExpose()</span></a>
+  - <a href="/vue/api/sfc-script-setup/#defineprops-defineemits" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineProps() & defineEmits()</span></a>
+  - <a href="/vue/api/sfc-script-setup/#defineexpose" target="_blank"><span style="color: #00dc82">&lt;script setup&gt; - defineExpose()</span></a>
 
 ## component
 
-  The term component is not unique to Vue. It is common to many UI frameworks. It describes a chunk of the UI, such as a button or checkbox. Components can also be combined to form larger components.
-  
-  Components are the primary mechanism provided by Vue to split a UI into smaller pieces, both to improve maintainability and to allow for code reuse.
-  
-  A Vue component is an object. All properties are optional, but either a template or render function is required for the component to render. 
-  
-  For example, the following object would be a valid component:
+Thuật ngữ "thành phần" không chỉ dành riêng cho Vue. Nó phổ biến trong nhiều framework UI. Nó mô tả một phần của UI, chẳng hạn như nút bấm hoặc hộp kiểm. Các thành phần cũng có thể được kết hợp để tạo thành các thành phần lớn hơn.
+
+Thành phần là cơ chế chính được Vue cung cấp để chia nhỏ UI thành các phần nhỏ hơn, vừa để cải thiện khả năng bảo trì vừa cho phép tái sử dụng mã.
+
+Thành phần Vue là một đối tượng. Tất cả các thuộc tính đều là tùy chọn, nhưng cần có mẫu hoặc hàm render để thành phần có thể render. 
+
+Ví dụ: đối tượng sau sẽ là một thành phần hợp lệ:
 
   ```js
     const HelloWorldComponent = {
@@ -72,26 +67,26 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
     }
   ```
 
-  In practice, most Vue applications are written using Single-File Components (.vue files). 
+  Trên thực tế, hầu hết các ứng dụng Vue đều được viết bằng <a href="/vue/glossary#single-file-component" target="_blank"><span style="color: #00dc82">Single-File Components</span></a> (tệp <Badge text=".vue" variant="note" />). 
+  Mặc dù thoạt nhìn các thành phần này có vẻ không phải là đối tượng, nhưng trình biên dịch SFC sẽ chuyển đổi chúng thành một đối tượng, được sử dụng làm tệp xuất mặc định cho tệp. 
+  Từ góc nhìn bên ngoài, tệp <Badge text=".vue" variant="note" /> chỉ là một mô-đun ES xuất một đối tượng thành phần.
   
-  While these components may not appear to be objects at first glance, the SFC compiler will convert them into an object, which is used as the default export for the file. From an external perspective, a .vue file is just an ES module that exports a component object.
-
-  The properties of a component object are usually referred to as options. This is where the <a href="/vue/api/sfc-script-setup#defineexpose" target="_blank"><span style="color: #00dc82">Options API gets its name</span></a>.
-
-  The options for a component define how instances of that component should be created. Components are conceptually similar to classes, though Vue doesn't use actual JavaScript classes to define them.
-
-  The term component can also be used more loosely to refer to component instances.
+  Các thuộc tính của một đối tượng thành phần thường được gọi là tùy chọn. Đây chính là nguồn gốc tên gọi của <a href="/vue/glossary/#options-api" target="_blank"><span style="color: #00dc82">API Tùy chọn</span></a>.
+  
+  Các tùy chọn cho một thành phần xác định cách tạo các thể hiện của thành phần đó. Về mặt khái niệm, các thành phần tương tự như các lớp, mặc dù Vue không sử dụng các lớp JavaScript thực tế để định nghĩa chúng.
+  
+  Thuật ngữ thành phần cũng có thể được sử dụng rộng rãi hơn để chỉ các thể hiện của thành phần.
 
   Xem thêm tại:
 
-  - <a href="/vue/api/sfc-script-setup#define-expose" target="_blank"><span style="color: #00dc82">Guide - Component Basics</span></a>
-  
-  The word 'component' also features in several other terms:
+  - <a href="/vue/guide/essentials/component-basics" target="_blank"><span style="color: #00dc82">Guide - Component Basics</span></a>
 
-  - <a href="/vue/glossary#async-component" target="_blank"><span style="color: #00dc82">async component</span></a>
-  - <a href="/vue/glossary#dynamic-component" target="_blank"><span style="color: #00dc82">dynamic component</span></a>
-  - <a href="/vue/glossary#functional-component" target="_blank"><span style="color: #00dc82">functional component</span></a>
-  - <a href="/vue/glossary#web-component" target="_blank"><span style="color: #00dc82">Web Component</span></a>
+  Từ <Badge text="component" variant="note" /> cũng có nhiều thuật ngữ khác:
+
+  - <a href="/vue/glossary/#async-component" target="_blank"><span style="color: #00dc82">async component</span></a>
+  - <a href="/vue/glossary/#dynamic-component" target="_blank"><span style="color: #00dc82">dynamic component</span></a>
+  - <a href="/vue/glossary/#functional-component" target="_blank"><span style="color: #00dc82">functional component</span></a>
+  - <a href="/vue/glossary/#web-component" target="_blank"><span style="color: #00dc82">Web Component</span></a>
 
 ## composable
 
@@ -135,8 +130,8 @@ import { Tabs, TabItem } from '@astrojs/starlight/components';
 
   Xem thêm tại:
 
-  Guide - Template Syntax - Directives
-  Guide - Custom Directives
+  - Guide - Template Syntax - Directives
+  - Guide - Custom Directives
 
 ## dynamic component
 
