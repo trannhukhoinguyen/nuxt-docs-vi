@@ -2,6 +2,8 @@ import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import catppuccin from "@catppuccin/starlight";
 import AutoImport from "astro-auto-import";
+import react from '@astrojs/react';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
@@ -817,5 +819,7 @@ export default defineConfig({
 			],
 			plugins: [catppuccin()],
 		}),
+    react(),
+    mdx(),
 	],
 });

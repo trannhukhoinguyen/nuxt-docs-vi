@@ -13,5 +13,35 @@ import { Icon } from '@astrojs/starlight/components';
 import { LinkButton } from '@astrojs/starlight/components';
 import { Tabs, TabItem } from '@astrojs/starlight/components';
 
+## Vue là gì?
 
+  Vue (phát âm là /vjuː/, giống như view) là một framework JavaScript dùng để xây dựng giao diện người dùng. 
+  Nó được xây dựng dựa trên HTML, CSS và JavaScript chuẩn và cung cấp một mô hình lập trình khai báo, dựa trên thành phần, giúp bạn phát triển giao diện người dùng ở mọi mức độ phức tạp một cách hiệu quả.
+  
+  Dưới đây là một ví dụ đơn giản:
 
+  ```js
+    import { createApp, ref } from 'vue'
+    
+    createApp({
+      setup() {
+        return {
+          count: ref(0)
+        }
+      }
+    }).mount('#app')
+  ```
+
+  ```html
+   <div id="app">
+    <button @click="count++">
+      Count is: {{ count }}
+    </button>
+  </div>
+  ```
+
+  <div id="app">
+    <button>
+      Count is: {{ count }}
+    </button>
+  </div>

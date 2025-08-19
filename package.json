@@ -12,7 +12,12 @@
   },
   "packageManager": "pnpm@10.10.0",
   "dependencies": {
+    "@astrojs/mdx": "^4.3.4",
+    "@astrojs/react": "^4.3.0",
+    "@catppuccin/starlight": "^1.0.1",
     "astro": "^5.12.8",
-    "astro-auto-import": "^0.4.4"
+    "astro-auto-import": "^0.4.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   }
 }
